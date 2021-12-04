@@ -24,7 +24,6 @@ npm run build
 > minifies the app for production
 
 ### Collaborating in Branches
-1. Master - Most stable version of the app, only commit new changes through staging branch
-2. Staging - Pre-production branch, to test code base on production environment
-3. `feature/<feature name>` - Branch namespace for any feature that you are working on 
-> (e.g. `scroll-animation`, `button-sound-effects`, etc.)
+1. Main - Most stable version of the app, only commit new changes through staging branch
+2. Staging - Pre-production branch, to test code base on production environment. Feature merges goes to staging.
+3. `feature-name` - Branch namespace for any feature that you are working on (e.g. `scroll-animation`, `button-sound-effects`, `embedding-game` etc.)
