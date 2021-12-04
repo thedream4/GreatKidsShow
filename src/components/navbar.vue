@@ -1,11 +1,65 @@
 <template>
-  <div>
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link> |
-      <router-link to="/blog">Blog</router-link> |
-      <router-link to="/PageOne">PageOne</router-link> |
-      <router-link to="/PageTwo">PageTwo</router-link>
-    </div>
+  <div id="nav">
+    <md-ripple
+      ><router-link to="/"><p>Home</p></router-link></md-ripple
+    >
+    <md-ripple
+      ><router-link to="/about"><p>About</p></router-link></md-ripple
+    >
+    <md-ripple
+      ><router-link to="/blog"><p>Games</p></router-link></md-ripple
+    >
+    <md-ripple
+      ><router-link to="/PageOne"><p>Fruits</p></router-link></md-ripple
+    >
+    <md-ripple
+      ><router-link to="/PageTwo"><p>Vegetables</p></router-link></md-ripple
+    >
+    <md-ripple
+      ><router-link to="/PageTwo"><p>Sushi</p></router-link></md-ripple
+    >
+    <md-ripple
+      ><router-link to="/PageTwo"><p>Animals</p></router-link></md-ripple
+    >
+    <md-ripple
+      ><router-link to="/PageTwo"><p>Hobbies</p></router-link></md-ripple
+    >
   </div>
 </template>
+
+<style scoped>
+#nav {
+  width: 20%;
+  float: right;
+  top: 0;
+  box-shadow: 1px 2px 3px #42b983;
+  position: fixed;
+  right: 0;
+  background-color: white;
+}
+
+#nav a.router-link-exact-active {
+  color: #42b983;
+}
+
+p {
+  height: 12.5vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 480px) {
+  #nav {
+    width: 100%;
+    display: flex;
+    top: 0;
+    position: sticky;
+    margin-bottom: 20px;
+  }
+  p {
+    height: 5vh;
+  }
+}
+</style>
