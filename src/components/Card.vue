@@ -4,7 +4,7 @@
       <md-ripple>
         <md-card-media-cover md-text-scrim>
           <md-card-media md-ratio="16:9">
-            <img src="../assets/logo.png" alt="Skyscraper" />
+            <img src="../../public/assets/logo.png" alt="Skyscraper" />
           </md-card-media>
 
           <md-card-area>
