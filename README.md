@@ -1,4 +1,4 @@
-# KRAZY KIDS 
+# GREAT KIDS SHOW
 You will need node.js to run this application on your local machine: 
 1. install node.js [here](https://nodejs.org/en/)
 2. Navigate to bin folder once installed
