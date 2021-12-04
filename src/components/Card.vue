@@ -1,7 +1,5 @@
 <template>
   <div>
-    <md-button class="md-raised">Button</md-button>
-
     <md-card class="md-with-hover">
       <md-ripple>
         <md-card-media-cover md-text-scrim>
@@ -11,21 +9,22 @@
 
           <md-card-area>
             <md-card-header>
-              <span class="md-title">Gradient background</span>
-              <span class="md-subhead">16/9 image</span>
+              <span class="md-title">Some Title Here</span>
+              <span class="md-subhead">Some descriptions here</span>
             </md-card-header>
 
             <md-card-actions>
-              <md-button>Action</md-button>
-              <md-button>Action</md-button>
+              <md-button>Click</md-button>
+              <md-button>Click</md-button>
             </md-card-actions>
           </md-card-area>
         </md-card-media-cover>
       </md-ripple>
     </md-card>
-
-    <md-button class="md-raised">Button</md-button>
-
+    <div>
+      <md-button class="md-raised">Button</md-button>
+      <md-button class="md-raised">Button</md-button>
+    </div>
   </div>
 </template>
 

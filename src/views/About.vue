@@ -1,12 +1,16 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati, vel. Non minima ea officiis vero sunt, nulla dolore aliquid voluptatum, hic iure inventore consequatur quae amet laborum molestias alias, beatae eveniet nobis sit distinctio excepturi! Nemo aut dolore deleniti explicabo quaerat magnam debitis facere voluptatibus. Quae quam quos dicta aut.</p>
-  </div>
+<div>
+    <h1>This is About.vue</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum obcaecati, possimus illum nisi ducimus incidunt quod quae aliquam illo vero fugiat quos nemo nobis culpa beatae molestias enim perferendis recusandae reiciendis officiis odit dolorem veniam assumenda. Iste tenetur rerum molestiae facilis blanditiis minima alias magni!</p>
+</div>
 </template>
 
-<style scoped>
-  .about {
-    color:red;
-  }
+<script>
+export default {
+
+}
+</script>
+
+<style>
+
 </style>

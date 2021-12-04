@@ -7,22 +7,22 @@
       ><router-link to="/about"><p>About</p></router-link></md-ripple
     >
     <md-ripple
-      ><router-link to="/blog"><p>Games</p></router-link></md-ripple
+      ><router-link to="/games"><p>Games</p></router-link></md-ripple
     >
     <md-ripple
-      ><router-link to="/PageOne"><p>Fruits</p></router-link></md-ripple
+      ><router-link to="/fruits"><p>Fruits</p></router-link></md-ripple
     >
     <md-ripple
-      ><router-link to="/PageTwo"><p>Vegetables</p></router-link></md-ripple
+      ><router-link to="/vegetables"><p>Vegetables</p></router-link></md-ripple
     >
     <md-ripple
-      ><router-link to="/PageTwo"><p>Sushi</p></router-link></md-ripple
+      ><router-link to="/sushi"><p>Sushi</p></router-link></md-ripple
     >
     <md-ripple
-      ><router-link to="/PageTwo"><p>Animals</p></router-link></md-ripple
+      ><router-link to="/animals"><p>Animals</p></router-link></md-ripple
     >
     <md-ripple
-      ><router-link to="/PageTwo"><p>Hobbies</p></router-link></md-ripple
+      ><router-link to="/hobbies"><p>Hobbies</p></router-link></md-ripple
     >
   </div>
 </template>
