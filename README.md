@@ -40,20 +40,20 @@ list of animations:
 <br />fade-up-left
 <br />fade-down-right
 <br />fade-down-left
-<br />Flip animations:
 <br />
+<br />Flip animations:
 <br />flip-up
 <br />flip-down
 <br />flip-left
 <br />flip-right
-<br />Slide animations:
 <br />
+<br />Slide animations:
 <br />slide-up
 <br />slide-down
 <br />slide-left
 <br />slide-right
-<br />Zoom animations:
 <br />
+<br />Zoom animations:
 <br />zoom-in-up
 <br />zoom-in-down
 <br />zoom-in-left
