@@ -5,10 +5,13 @@ import router from './router'
 import VueMaterial from 'vue-material';
 import 'vue-material/dist/vue-material.min.css'
 // import 'vue-material/dist/theme/default.css' // enables dark & light theme
-// To-install: animate (navigation animation), aos (scroll animation)
+import AOS from 'aos'; //scroll animation
+import 'aos/dist/aos.css'; //scroll animation
 
 Vue.config.productionTip = false
 Vue.use(VueMaterial)
+
+AOS.init();
 
 new Vue({
   router,

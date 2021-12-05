@@ -27,3 +27,45 @@ npm run build
 1. Main - Most stable version of the app, only commit new changes through staging branch
 2. Staging - Pre-production branch, to test code base on production environment. Feature merges goes to staging.
 3. `feature-name` - Branch namespace for any feature that you are working on (e.g. `scroll-animation`, `button-sound-effects`, `embedding-game` etc.)
+
+
+### FOR FUN!!!
+list of animations:
+
+fade
+fade-up
+fade-down
+fade-left
+fade-right
+fade-up-right
+fade-up-left
+fade-down-right
+fade-down-left
+Flip animations:
+
+flip-up
+flip-down
+flip-left
+flip-right
+Slide animations:
+
+slide-up
+slide-down
+slide-left
+slide-right
+Zoom animations:
+
+zoom-in
+zoom-in-up
+zoom-in-down
+zoom-in-left
+zoom-in-right
+zoom-out
+zoom-out-up
+zoom-out-down
+zoom-out-left
+zoom-out-right
+
+usage: just add the animation to your html tags
+`<p data-aos="slide-up" data-aos-duration="1500">Hello!</p>`
+`<div data-aos="fade-in" data-aos-duration="2000"></div>`

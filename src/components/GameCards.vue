@@ -2,13 +2,17 @@
   <div>
     <!-- for each game in games db (declared and initalized in line 33 & 38), 
     loop and display the content -->
-    <div v-for="game in games" v-bind:key="game._id"> 
-      <md-card class="md-with-hover">
+    <div v-for="game in games" v-bind:key="game._id">
+      <md-card
+        class="md-with-hover"
+        data-aos="flip-down"
+        data-aos-duration="1500"
+      >
         <md-ripple>
           <md-card-media-cover md-text-scrim>
             <md-card-media md-text-scrim md-ratio="16:9">
               <!-- img src binds to a function called cover() and passes a url as a parameter-->
-              <img :src="cover(game.thumbnail)" alt="music rush" /> 
+              <img :src="cover(game.thumbnail)" alt="music rush" />
             </md-card-media>
 
             <md-card-area>
@@ -39,9 +43,11 @@ export default {
       games: gamesData, // assigns data to "games" so can call it in DOM like {{ games.title }}
     };
   },
-  methods: { // "methods" is another word for "functions" in vue
+  methods: {
+    // "methods" is another word for "functions" in vue
     cover(url) {
-      if (url !== "") { //url not empty
+      if (url !== "") {
+        //url not empty
         try {
           url = require("@/assets/" + url); // check for matching path url and use that image
         } catch (e) {

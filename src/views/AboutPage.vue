@@ -1,11 +1,11 @@
 <template>
   <div>
     <h1>This is About Page</h1>
-    <video controls>
+    <video controls data-aos="slide-up" data-aos-duration="1500">
       <source src="" type="video/mp4" />
       Your browser does not support the video tag.
     </video>
-    <p>
+    <p data-aos="slide-up" data-aos-duration="1500">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum obcaecati,
       possimus illum nisi ducimus incidunt quod quae aliquam illo vero fugiat
       quos nemo nobis culpa beatae molestias enim perferendis recusandae
@@ -17,7 +17,7 @@
 
 <script>
 export default {
-    name: 'AboutPage',
+  name: "AboutPage",
 };
 </script>
 
