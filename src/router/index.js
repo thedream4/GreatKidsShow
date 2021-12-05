@@ -1,13 +1,13 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
-import About from '../views/About.vue'
-import Games from '../views/Games.vue'
-import Fruits from '../views/Fruits.vue'
-import Vegetables from '../views/Vegetables.vue'
-import Sushi from '../views/Sushi.vue'
-import Animals from '../views/Animals.vue'
-import Hobbies from '../views/Hobbies.vue'
+import Home from '../views/HomePage.vue'
+import About from '../views/AboutPage.vue'
+import Games from '../views/GamesPage.vue'
+import Fruits from '../views/FruitsPage.vue'
+import Vegetables from '../views/VegetablesPage.vue'
+import Sushi from '../views/SushiPage.vue'
+import Animals from '../views/AnimalsPage.vue'
+import Hobbies from '../views/HobbiesPage.vue'
 
 // always tell vue to use the router otherwise no point defining the router array
 Vue.use(VueRouter)
