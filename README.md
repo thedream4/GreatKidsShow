@@ -31,41 +31,40 @@ npm run build
 
 ### FOR FUN!!!
 list of animations:
-
-fade
-fade-up
-fade-down
-fade-left
-fade-right
-fade-up-right
-fade-up-left
-fade-down-right
-fade-down-left
-Flip animations:
-
-flip-up
-flip-down
-flip-left
-flip-right
-Slide animations:
-
-slide-up
-slide-down
-slide-left
-slide-right
-Zoom animations:
-
-zoom-in
-zoom-in-up
-zoom-in-down
-zoom-in-left
-zoom-in-right
-zoom-out
-zoom-out-up
-zoom-out-down
-zoom-out-left
-zoom-out-right
-
-usage: just add the animation to your html tags
-`<p data-aos="slide-up" data-aos-duration="1500">Hello!</p>`
+<br />fade
+<br />fade-up
+<br />fade-down
+<br />fade-left
+<br />fade-right
+<br />fade-up-right
+<br />fade-up-left
+<br />fade-down-right
+<br />fade-down-left
+<br />Flip animations:
+<br />
+<br />flip-up
+<br />flip-down
+<br />flip-left
+<br />flip-right
+<br />Slide animations:
+<br />
+<br />slide-up
+<br />slide-down
+<br />slide-left
+<br />slide-right
+<br />Zoom animations:
+<br />
+<br />zoom-in-up
+<br />zoom-in-down
+<br />zoom-in-left
+<br />zoom-in-right
+<br />zoom-out
+<br />zoom-out-up
+<br />zoom-out-down
+<br />zoom-out-left
+<br />zoom-out-right
+<br />
+<br />usage: just add the animation to your html tags
+<br />`<p data-aos="slide-up" data-aos-duration="1500">Hello!</p>`
+<br />
 `<div data-aos="fade-in" data-aos-duration="2000"></div>`
