@@ -33,7 +33,7 @@
 import cartoonData from "../data/cartoon.json";
 
 export default {
-  name: "FeaturedVideos",
+  name: "TrendingVideos",
   components: {},
   data() {
     return {
