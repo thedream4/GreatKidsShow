@@ -3,12 +3,13 @@
     <h1>HOME</h1>
     <FeaturedVideos />
     <TrendingVideos />
+    <br><br><br>
   </div>
 </template>
 
 <script>
 import FeaturedVideos from "../components/FeaturedVidGallery.vue";
-import TrendingVideos from "../components/TrendingVidGallerys.vue";
+import TrendingVideos from "../components/TrendingVidGallery.vue";
 
 export default {
   name: "HomePage",

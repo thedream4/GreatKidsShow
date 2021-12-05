@@ -29,18 +29,46 @@ export default {
   margin-right: 20%;
 }
 
+/* CODE FOR SCROLLING GALLERY */
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.viewport {
+  width: 100%;
+  overflow: scroll;
+  padding: 5px;
+}
+.card-m {
+  margin-right: 10px;
+  border: 1px solid gray;
+  border-radius: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2px;
+  box-shadow: 2px 2px 3px black;
+  min-width: 400px;
+}
+/* END CODE FOR SCROLLING GALLERY */
+
 video {
-  /* margin-left: 5%;
-  margin-right: 5%;
-  width: 90%; 100% - 10% because margin-left and margin-right 5% each */
-  width:100%;
-  border: 10px solid pink; /* overwrite the border color in scoped css */
+  width: 100%;
 }
 
 /* phone viewport */
 @media screen and (max-width: 480px) {
   .views {
     margin-right: 0;
+  }
+  .card-m {
+    margin-right: 10px;
+    width: 200px;
   }
 }
 </style>

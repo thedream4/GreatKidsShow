@@ -44,34 +44,6 @@ export default {
 </script>
 
 <style scoped>
-.container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  width: 100%;
-  /* border: 2px dotted red; */
-}
-::-webkit-scrollbar {
-  display: none;
-}
-.viewport {
-  width: 100%;
-  overflow: scroll;
-  padding: 5px;
-  /* border: 2px solid green; */
-}
-.card-m {
-  margin-right: 10px;
-  border: 1px solid gray;
-  border-radius: 10%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 2px;
-  box-shadow: 2px 2px 3px black;
-  min-width: 300px;
-}
-
 img {
   border-radius: 10%;
 }
