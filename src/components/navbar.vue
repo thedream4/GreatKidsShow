@@ -36,6 +36,7 @@
   position: fixed;
   right: 0;
   background-color: white;
+  z-index:1000;
 }
 
 #nav a.router-link-exact-active {

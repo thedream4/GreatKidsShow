@@ -1,0 +1,102 @@
+[
+    {
+        "name": "Keoy Shon Tzu",
+        "photo": "Picture1.png",
+        "Age": 21,
+        "expertise" : "Web Development",
+        "socials": {
+            "IG": {
+                "icon": "icon-IG.png",
+                "link": "https://www.instagram.com/shontzu/"
+            },
+            "LN": {
+                "icon": "icon-LI.png",
+                "link": "https://www.linkedin.com/in/shontzu/"
+            },
+            "GH": {
+                "icon": "icon-GH.png",
+                "link": "https://github.com/yuuchin"
+            }
+        }
+    },
+    {
+        "name": "Ngeo Jia Jun",
+        "photo": "Picture2.png",
+        "Age": 21,
+        "expertise" : "Game Development",
+        "socials": {
+            "IG": {
+                "icon": "icon-IG.png",
+                "link": "https://www.instagram.com/shontzu/"
+            },
+            "LN": {
+                "icon": "icon-LI.png",
+                "link": "https://www.linkedin.com/in/shontzu/"
+            },
+            "GH": {
+                "icon": "icon-GH.png",
+                "link": "https://github.com/yuuchin"
+            }
+        }
+    },
+    {
+        "name": "Chan Vern Yi",
+        "photo": "Picture3.png",
+        "Age": 21,
+        "expertise" : "Web and Graphics production",
+        "socials": {
+            "IG": {
+                "icon": "icon-IG.png",
+                "link": "https://www.instagram.com/shontzu/"
+            },
+            "LN": {
+                "icon": "icon-LI.png",
+                "link": "https://www.linkedin.com/in/shontzu/"
+            },
+            "GH": {
+                "icon": "icon-GH.png",
+                "link": "https://github.com/yuuchin"
+            }
+        }
+    },
+    {
+        "name": "Chon Jia Yuen",
+        "photo": "Picture4.png",
+        "Age": 21,
+        "expertise" : "Multimedia production",
+        "socials": {
+            "IG": {
+                "icon": "icon-IG.png",
+                "link": "https://www.instagram.com/shontzu/"
+            },
+            "LN": {
+                "icon": "icon-LI.png",
+                "link": "https://www.linkedin.com/in/shontzu/"
+            },
+            "GH": {
+                "icon": "icon-GH.png",
+                "link": "https://github.com/yuuchin"
+            }
+        }
+    },
+    {
+        "name": "Leong Shii Tsong",
+        "photo": "Picture5.png",
+        "Age": 21,
+        "expertise" : "Multimedia production",
+        "socials": {
+            "IG": {
+                "icon": "icon-IG.png",
+                "link": "https://www.instagram.com/shontzu/"
+            },
+            "LN": {
+                "icon": "icon-LI.png",
+                "link": "https://www.linkedin.com/in/shontzu/"
+            },
+            "GH": {
+                "icon": "icon-GH.png",
+                "link": "https://github.com/yuuchin"
+            }
+        }
+    }
+]

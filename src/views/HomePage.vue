@@ -7,8 +7,8 @@
 </template>
 
 <script>
-import FeaturedVideos from "../components/FeaturedVideos.vue";
-import TrendingVideos from "../components/TrendingVideos.vue";
+import FeaturedVideos from "../components/FeaturedVidGallery.vue";
+import TrendingVideos from "../components/TrendingVidGallerys.vue";
 
 export default {
   name: "HomePage",
