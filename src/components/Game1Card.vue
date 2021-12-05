@@ -4,39 +4,35 @@
       <md-ripple>
         <md-card-media-cover md-text-scrim>
           <md-card-media md-ratio="16:9">
-            <img src="../../public/assets/logo.png" alt="Skyscraper" />
+            <img src="../assets/SnakesAndLadderThumbnail.jpg" alt="Snakes and Ladder Thumbnail" />
           </md-card-media>
 
           <md-card-area>
             <md-card-header>
-              <span class="md-title">Some Title Here</span>
+              <span class="md-title">Snakes and Ladders</span>
               <span class="md-subhead">Some descriptions here</span>
             </md-card-header>
 
             <md-card-actions>
-              <md-button>Click</md-button>
-              <md-button>Click</md-button>
+              <md-button>PLAY</md-button>
             </md-card-actions>
           </md-card-area>
         </md-card-media-cover>
       </md-ripple>
     </md-card>
-    <div>
-      <md-button class="md-raised">Button</md-button>
-      <md-button class="md-raised">Button</md-button>
-    </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: "Card",
-  props: {
-    msg: String,
-  },
+    name: "GameCard1",
 };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+img{
+  height:100%;
+  /* width: 100%;; */
+}
 </style>
