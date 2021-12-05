@@ -1,21 +1,32 @@
 <template>
   <div>
     <h1>This is Games Page</h1>
-    <Game1Card />
+    <!-- 
+      hardcoding the game cards components because my attempt to 
+      dynamically render the games from a .JSON / .JS file failed
+      
+      <GameCards /> component supposed to loop through JSON/js 
+      and display the cards accordingly but multiple attempts failed
+     -->
+    <!-- <GameCards /> -->
+    <br>
+    <SnakeAndLadderCard />
     <br />
-    <Game2Card />
+    <MusicRushCard />
   </div>
 </template>
 
 <script>
-import Game1Card from "@/components/Game1Card.vue";
-import Game2Card from "@/components/Game2Card.vue";
+// import GameCards from "@/components/GameCards.vue";
+import MusicRushCard from "@/components/MusicRushCard.vue";
+import SnakeAndLadderCard from "@/components/SnakeAndLadderCard.vue";
 
 export default {
   name: "GamesPage",
   components: {
-    Game1Card,
-    Game2Card,
+    // GameCards,
+    MusicRushCard,
+    SnakeAndLadderCard,
   },
 };
 </script>

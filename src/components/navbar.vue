@@ -7,7 +7,7 @@
       ><router-link to="/about"><p>About</p></router-link></md-ripple
     >
     <md-ripple
-      ><router-link to="/games"><p>Games</p></router-link></md-ripple
+      ><router-link to="/games"><p>GamesPage</p></router-link></md-ripple
     >
     <md-ripple
       ><router-link to="/fruits"><p>Fruits</p></router-link></md-ripple

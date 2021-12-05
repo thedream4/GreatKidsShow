@@ -5,14 +5,14 @@
         <md-card-media-cover md-text-scrim>
           <md-card-media md-ratio="16:9">
             <img
-              src="../assets/MusicRushThumbnail.jpg"
+              src="../assets/SnakesAndLadderThumbnail.jpg"
               alt="Music Rush Thumbnail"
             />
           </md-card-media>
 
           <md-card-area>
             <md-card-header>
-              <span class="md-title">Music Rush</span>
+              <span class="md-title">Snakes and Ladders</span>
               <span class="md-subhead">Some descriptions here</span>
             </md-card-header>
 
@@ -23,12 +23,16 @@
         </md-card-media-cover>
       </md-ripple>
     </md-card>
+    <!-- <div>
+      <md-button class="md-raised">Button</md-button>
+      <md-button class="md-raised">Button</md-button>
+    </div> -->
   </div>
 </template>
 
 <script>
 export default {
-  name: "GameCard2",
+  name: "SnakeAndLadderCard",
 };
 </script>
 
