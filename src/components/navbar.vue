@@ -7,7 +7,7 @@
       ><router-link to="/about"><p>About</p></router-link></md-ripple
     >
     <md-ripple
-      ><router-link to="/games"><p>GamesPage</p></router-link></md-ripple
+      ><router-link to="/games"><p>Games</p></router-link></md-ripple
     >
     <md-ripple
       ><router-link to="/fruits"><p>Fruits</p></router-link></md-ripple
@@ -29,7 +29,7 @@
 
 <style scoped>
 #nav {
-  width: 20%;
+  width: 10%;
   float: right;
   top: 0;
   box-shadow: 1px 2px 3px #42b983;

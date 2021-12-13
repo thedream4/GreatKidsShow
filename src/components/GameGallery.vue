@@ -4,8 +4,8 @@
       <div v-for="game in games" v-bind:key="game._id">
         <md-card
           class="md-with-hover"
-          data-aos="flip-left"
-          data-aos-duration="1500"
+          data-aos="zoom-in-up"
+          data-aos-duration="1000"
         >
           <md-ripple>
             <md-card-media-cover md-text-scrim>

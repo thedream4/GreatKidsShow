@@ -10,8 +10,7 @@
           v-for="member in members"
           v-bind:key="member._id"
         >
-          <md-ripple>
-            <!-- ripple effect on click -->
+          <md-ripple> <!-- ripple effect on click -->
             <b>☆ {{ member.name.toUpperCase() }} ☆</b>
             <img
               :src="cover(member.photo)"
@@ -21,18 +20,19 @@
             <b>Expertise: {{ member.expertise }}</b>
             <div style="display: flex; flex-direction: row">
               <div v-for="social in member.socials" v-bind:key="social._id">
-                <md-button @click="redirect()">
-                  <img :src="cover(social.icon)" alt="icon" width="50px" />
+                <md-button>
+                  <a :href="social.link" target="blank">
+                    <img :src="cover(social.icon)" alt="icon" width="50px" /> <!-- calls function in line 51 -->
+                  </a> 
                 </md-button>
               </div>
             </div>
           </md-ripple>
-        </div>
-        <!-- end of card-m -->
-      </div>
-    </div>
+        </div> <!-- end of card-m -->
+      </div> <!-- end of container -->
+    </div> <!-- end of viewport -->
     <br /><br /><br />
-  </div>
+  </div> <!-- end of template -->
 </template>
 
 <script>
@@ -46,21 +46,17 @@ export default {
       members: teamData,
     };
   },
-  methods: {
-    // "methods" is another word for "functions" in vue
+  methods: { // method is functions in vue
+    // this function (called on line 25) checks for matching image to bind to the for-loop
     cover(url) {
-      if (url !== "") {
-        //url not empty
+      if (url !== "") { //url not empty
         try {
-          url = require("@/assets/" + url); // check for matching path url and use that image
+          url = require("@/assets/" + url); // match the url and use that image
         } catch (e) {
           url = require("@/assets/default.jpg"); // use a default image if error
         }
       } else url = require("@/assets/default.jpg"); // use a default image if url empty
       return url;
-    },
-    redirect() {
-      alert("hello!"); //temporary response, todo: open respective social media accounts in new tab
     },
   },
 };

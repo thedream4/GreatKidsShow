@@ -5,7 +5,7 @@
         <md-card-media-cover md-text-scrim>
           <md-card-media md-ratio="16:9">
             <img
-              src="../assets/MusicRushThumbnail.jpg"
+              src="../assets/ThumbnailMusicRush.jpg"
               alt="Music Rush Thumbnail"
             />
           </md-card-media>

@@ -11,9 +11,8 @@
           v-bind:key="cartoon._id"
         >
           <md-ripple>
-            <!-- ripple effect on click -->
             <img
-              src="../assets/default.jpg"
+              :src="cover(cartoon.thumbnail)" 
               alt="food"
               style="width: 100%; height: auto"
             />
@@ -23,7 +22,6 @@
             </div>
           </md-ripple>
         </div>
-        <!-- end of card-m -->
       </div>
     </div>
   </div>
@@ -39,6 +37,21 @@ export default {
     return {
       cartoons: cartoonData,
     };
+  },
+  methods: {
+    // method is functions in vue
+    // this function (called on line 15) checks for matching image to bind to the for-loop
+    cover(url) {
+      if (url !== "") {
+        //url not empty
+        try {
+          url = require("@/assets/" + url); // match the url and use that image
+        } catch (e) {
+          url = require("@/assets/default.jpg"); // use a default image if error
+        }
+      } else url = require("@/assets/default.jpg"); // use a default image if url empty
+      return url;
+    },
   },
 };
 </script>

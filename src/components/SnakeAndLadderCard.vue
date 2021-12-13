@@ -5,7 +5,7 @@
         <md-card-media-cover md-text-scrim>
           <md-card-media md-ratio="16:9">
             <img
-              src="../assets/SnakesAndLadderThumbnail.jpg"
+              src="../assets/ThumbnailSnakesAndLadder.jpg"
               alt="Music Rush Thumbnail"
             />
           </md-card-media>
@@ -23,10 +23,6 @@
         </md-card-media-cover>
       </md-ripple>
     </md-card>
-    <!-- <div>
-      <md-button class="md-raised">Button</md-button>
-      <md-button class="md-raised">Button</md-button>
-    </div> -->
   </div>
 </template>
 

@@ -11,11 +11,16 @@ export default {
   components: {
     "nav-bar": NavBar,
   },
+  // uncomment line 16-18 before submission 
+  // alert will be called everytime the app refreshes
+  // created: () => {
+  //   alert("Let's Explore!");
+  // },
 };
 </script>
 
 <style>
-/* styles applies in App.vue will be applied globally across all pages and components */
+/* styles applied in App.vue will be applied globally across all pages and components */
 /* default (desktop) viewport */
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -26,7 +31,7 @@ export default {
 }
 
 .views {
-  margin-right: 20%;
+  margin-right: 10%;
 }
 
 /* CODE FOR SCROLLING GALLERY */

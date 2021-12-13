@@ -1,9 +1,9 @@
 [
     {
         "name": "Keoy Shon Tzu",
-        "photo": "Picture1.png",
+        "photo": "ProfilePic1.png",
         "Age": 21,
-        "expertise" : "Web Development",
+        "expertise": "Web Development",
         "socials": {
             "IG": {
                 "icon": "icon-IG.png",
@@ -21,9 +21,9 @@
     },
     {
         "name": "Ngeo Jia Jun",
-        "photo": "Picture2.png",
+        "photo": "ProfilePic2.png",
         "Age": 21,
-        "expertise" : "Game Development",
+        "expertise": "Game Development",
         "socials": {
             "IG": {
                 "icon": "icon-IG.png",
@@ -41,9 +41,9 @@
     },
     {
         "name": "Chan Vern Yi",
-        "photo": "Picture3.png",
+        "photo": "ProfilePic3.png",
         "Age": 21,
-        "expertise" : "Web and Graphics production",
+        "expertise": "Web and Graphics production",
         "socials": {
             "IG": {
                 "icon": "icon-IG.png",
@@ -60,10 +60,10 @@
         }
     },
     {
-        "name": "Chon Jia Yuen",
-        "photo": "Picture4.png",
+        "name": "Chong Jia Yuen",
+        "photo": "ProfilePic4.png",
         "Age": 21,
-        "expertise" : "Multimedia production",
+        "expertise": "Multimedia production",
         "socials": {
             "IG": {
                 "icon": "icon-IG.png",
@@ -81,9 +81,9 @@
     },
     {
         "name": "Leong Shii Tsong",
-        "photo": "Picture5.png",
+        "photo": "ProfilePic5.png",
         "Age": 21,
-        "expertise" : "Multimedia production",
+        "expertise": "Multimedia production",
         "socials": {
             "IG": {
                 "icon": "icon-IG.png",
