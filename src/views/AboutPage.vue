@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>This is About Page</h1>
-    <video controls data-aos="slide-left" data-aos-duration="1500">
+    <video controls data-aos="fade-up" data-aos-duration="1500">
       <source src="" type="video/mp4" />
       Your browser does not support the video tag.
     </video>

@@ -4,7 +4,7 @@
     <div class="viewport">
       <div class="container">
         <div
-          data-aos="flip-left"
+          data-aos="slide-left"
           data-aos-duration="1500"
           class="card-m"
           v-for="cartoon in cartoons"
