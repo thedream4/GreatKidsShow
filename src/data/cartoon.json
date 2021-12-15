@@ -3,30 +3,35 @@
         "id": 1,
         "title": "fruits",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi, eius",
-        "thumbnail": ""
+        "thumbnail": "",
+        "route": "fruits"
     },
     {
         "id": 2,
         "title": "vegetables",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi, eius",
-        "thumbnail": ""
+        "thumbnail": "",
+        "route": "vegetables"
     },
     {
         "id": 3,
         "title": "sushi",
-        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi, eius",
-        "thumbnail": ""
+        "description": "Let's learn about all the different types of sushi",
+        "thumbnail": "Thumbnail-Sushi.jpg",
+        "route": "sushi"
     },
     {
         "id": 4,
         "title": "animals",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi, eius",
-        "thumbnail": ""
+        "thumbnail": "",
+        "route": "animals"
     },
     {
         "id": 5,
         "title": "hobbies",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi, eius",
-        "thumbnail": ""
+        "thumbnail": "",
+        "route": "hobbies"
     }
 ]

@@ -9,12 +9,13 @@
           class="card-m"
           v-for="cartoon in cartoons"
           v-bind:key="cartoon._id"
+          @click="route(cartoon.route)"
         >
           <md-ripple>
             <img
-              :src="cover(cartoon.thumbnail)" 
+              :src="cover(cartoon.thumbnail)"
               alt="food"
-              style="width: 100%; height: auto"
+              style="width: 100%; height: 200px"
             />
             <div>
               <h3>☆ {{ cartoon.title }} ☆</h3>
@@ -51,6 +52,9 @@ export default {
         }
       } else url = require("@/assets/default.jpg"); // use a default image if url empty
       return url;
+    },
+    route(route) {
+      this.$router.push("/" + route);
     },
   },
 };
