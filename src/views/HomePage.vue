@@ -1,16 +1,19 @@
 <template>
   <div>
     <h1>HOME</h1>
-    <FeaturedVideos />
-    <TrendingVideos />
+    <h2><i>☆☆☆ FEATURED ☆☆☆</i></h2>
+    <VideoGallery :cartoons="featuredCartoon" />
+    <h2><i>☆☆☆ TRENDING ☆☆☆</i></h2>
+    <VideoGallery :cartoons="trendingCartoon" />
     <br /><br /><br />
   </div>
 </template>
 
 <script>
-import FeaturedVideos from "../components/FeaturedVidGallery.vue";
-import TrendingVideos from "../components/TrendingVidGallery.vue";
-
+import { ref } from "@vue/composition-api";
+import VideoGallery from "../components/VideoGallery.vue";
+import featuredCartoonData from "@/data/featuredCartoon.json";
+import trendingCartoonData from "@/data/trendingCartoon.json";
 // if your crush knows binary
 // they'd think you're a 10
 // Shon Tzu.K (2021)
@@ -18,8 +21,12 @@ import TrendingVideos from "../components/TrendingVidGallery.vue";
 export default {
   name: "HomePage",
   components: {
-    FeaturedVideos,
-    TrendingVideos,
+    VideoGallery,
+  },
+  setup() {
+    const featuredCartoon = ref(featuredCartoonData);
+    const trendingCartoon = ref(trendingCartoonData);
+    return { featuredCartoon, trendingCartoon };
   },
 };
 </script>

@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
+import VueCompositionAPI from '@vue/composition-api'
 // you can import anything here: bootstrap, css, libraries...
 import VueMaterial from 'vue-material'; //component library
 import 'vue-material/dist/vue-material.min.css' //component library minified
@@ -11,6 +12,7 @@ import 'aos/dist/aos.css'; //scroll animation minified
 Vue.config.productionTip = false
 
 // use the imported libraries 
+Vue.use(VueCompositionAPI)
 Vue.use(VueMaterial)
 AOS.init()
 
