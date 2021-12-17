@@ -1,18 +1,15 @@
 <template>
-  <div>
-    <h1>This is Animals Page</h1>
-    <p>
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, vel
-      magni ab odio in provident molestias quo impedit. Voluptatum, corrupti!
-      Sapiente repudiandae sequi, officiis eligendi maiores est beatae officia
-      iusto quisquam nesciunt quo dicta et velit, dolorem eveniet magnam illum!
-    </p>
-  </div>
+  <CartoonPlayerComponent data_key="animals">
+  </CartoonPlayerComponent>
 </template>
 
 <script>
+import CartoonPlayerComponent from "../components/CartoonPlayerComponent.vue"
 export default {
   name: "AnimalsPage",
+  components:{
+    CartoonPlayerComponent,
+  }
 };
 </script>
 
