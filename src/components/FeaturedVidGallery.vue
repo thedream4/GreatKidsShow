@@ -15,7 +15,7 @@
             <img
               :src="cover(cartoon.thumbnail)"
               alt="food"
-              style="width: 100%; height: 200px"
+              style="width: 100%; height: auto"
             />
             <div>
               <h3>☆ {{ cartoon.title }} ☆</h3>
@@ -61,18 +61,4 @@ export default {
 </script>
 
 <style scoped>
-img {
-  border-radius: 10%;
-}
-
-.card-m div {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  min-height: 100px;
-}
-h3 {
-  margin: 0;
-}
 </style>

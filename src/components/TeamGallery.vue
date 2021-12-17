@@ -10,29 +10,27 @@
           v-for="member in members"
           v-bind:key="member._id"
         >
-          <md-ripple> <!-- ripple effect on click -->
-            <b>☆ {{ member.name.toUpperCase() }} ☆</b>
-            <img
-              :src="cover(member.photo)"
-              alt="member"
-              style="width: 100%; height: 300px"
-            />
-            <b>Expertise: {{ member.expertise }}</b>
+          <md-ripple>
+            <img :src="cover(member.photo)" alt="member" style="height:250px;"/>
+              {{ member.name.toUpperCase() }} <br />{{ member.expertise }}
             <div style="display: flex; flex-direction: row">
               <div v-for="social in member.socials" v-bind:key="social._id">
-                <md-button>
-                  <a :href="social.link" target="blank">
-                    <img :src="cover(social.icon)" alt="icon" width="50px" /> <!-- calls function in line 51 -->
-                  </a> 
-                </md-button>
+                <a :href="social.link" target="blank">
+                  <img :src="cover(social.icon)" alt="icon" id="icon" />
+                  <!-- calls function in line 51 -->
+                </a>
               </div>
             </div>
           </md-ripple>
-        </div> <!-- end of card-m -->
-      </div> <!-- end of container -->
-    </div> <!-- end of viewport -->
+        </div>
+        <!-- end of card-m -->
+      </div>
+      <!-- end of container -->
+    </div>
+    <!-- end of viewport -->
     <br /><br /><br />
-  </div> <!-- end of template -->
+  </div>
+  <!-- end of template -->
 </template>
 
 <script>
@@ -46,10 +44,12 @@ export default {
       members: teamData,
     };
   },
-  methods: { // method is functions in vue
+  methods: {
+    // method is functions in vue
     // this function (called on line 25) checks for matching image to bind to the for-loop
     cover(url) {
-      if (url !== "") { //url not empty
+      if (url !== "") {
+        //url not empty
         try {
           url = require("@/assets/" + url); // match the url and use that image
         } catch (e) {
@@ -63,20 +63,20 @@ export default {
 </script>
 
 <style scoped>
-img {
-  border-radius: 15%;
+#icon {
+  width: 50px;
 }
-
-.card-m {
-  height: 500px;
-}
-
 .card-m div {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
   align-items: center;
 }
 @media screen and (max-width: 480px) {
+  img {
+    max-height: 150px;
+  }
+  #icon {
+    width: 25px;
+  }
 }
 </style>

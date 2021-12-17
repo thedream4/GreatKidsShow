@@ -11,7 +11,7 @@ export default {
   components: {
     "nav-bar": NavBar,
   },
-  // uncomment line 16-18 before submission 
+  // uncomment line 16-18 before submission
   // alert will be called everytime the app refreshes
   // created: () => {
   //   alert("Let's Explore!");
@@ -58,7 +58,14 @@ export default {
   align-items: center;
   padding: 2px;
   box-shadow: 2px 2px 3px black;
-  min-width: 400px;
+  min-width: 25vw;
+  min-height: 300px;
+}
+
+img {
+  border-radius: 15%;
+  width: 100%;
+  /* max-height: 40vh; */
 }
 /* END CODE FOR SCROLLING GALLERY */
 
@@ -73,7 +80,8 @@ video {
   }
   .card-m {
     margin-right: 10px;
-    width: 200px;
+    min-width: 40vw;
+    min-height: 30vh;
   }
 }
 </style>

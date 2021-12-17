@@ -44,18 +44,4 @@ export default {
 </script>
 
 <style scoped>
-img {
-  border-radius: 10%;
-}
-
-.card-m div {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  min-height: 100px;
-}
-h3 {
-  margin: 0;
-}
 </style>
