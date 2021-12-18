@@ -3,13 +3,37 @@
         "id": 1,
         "title": "fruits",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi, eius",
+        "url": "",
         "thumbnail": "",
-        "route": "fruits"
+        "route": "fruits",
+        "trivias": [
+            {
+                "title": "apple",
+                "icon": "",
+                "trivia": "apple is a red fruit"
+            },
+            {
+                "title": "orange",
+                "icon": "",
+                "trivia": "orange is orange"
+            },
+            {
+                "title": "mango",
+                "icon": "",
+                "trivia": "mango is slippery"
+            },
+            {
+                "title": "kiwi",
+                "icon": "",
+                "trivia": "kiwi is green and sour"
+            }
+        ]
     },
     {
         "id": 2,
         "title": "vegetables",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi, eius",
+        "url": "",
         "thumbnail": "",
         "route": "vegetables"
     },
@@ -17,6 +41,7 @@
         "id": 3,
         "title": "sushi",
         "description": "Let's learn about all the different types of sushi",
+        "url": "",
         "thumbnail": "Thumbnail-Sushi.jpg",
         "route": "sushi"
     },
@@ -24,6 +49,7 @@
         "id": 4,
         "title": "animals",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi, eius",
+        "url": "",
         "thumbnail": "",
         "route": "animals"
     },
@@ -31,6 +57,7 @@
         "id": 5,
         "title": "hobbies",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi, eius",
+        "url": "",
         "thumbnail": "",
         "route": "hobbies"
     }
