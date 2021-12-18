@@ -3,35 +3,155 @@
         "id": 1,
         "title": "fruits",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi, eius",
+        "background": "",
+        "video": "",
         "thumbnail": "",
-        "route": "fruits"
+        "route": "fruits",
+        "trivias": [
+            {
+                "title": "",
+                "icon": "",
+                "trivia": ""
+            },
+            {
+                "title": "",
+                "icon": "",
+                "trivia": ""
+            },
+            {
+                "title": "",
+                "icon": "",
+                "trivia": ""
+            }
+        ]
     },
     {
         "id": 2,
         "title": "vegetables",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi, eius",
+        "background": "",
+        "video": "",
         "thumbnail": "",
-        "route": "vegetables"
+        "route": "vegetables",
+        "trivias": [
+            {
+                "title": "",
+                "icon": "",
+                "trivia": ""
+            },
+            {
+                "title": "",
+                "icon": "",
+                "trivia": ""
+            },
+            {
+                "title": "",
+                "icon": "",
+                "trivia": ""
+            }
+        ]
     },
     {
         "id": 3,
         "title": "sushi",
         "description": "Let's learn about all the different types of sushi",
+        "background": "bg-mount.jpg",
+        "video": "sushi.avi",
         "thumbnail": "Thumbnail-Sushi.jpg",
-        "route": "sushi"
+        "route": "sushi",
+        "trivias": [
+            {
+                "title": "Nigiri",
+                "icon": "",
+                "trivia": ""
+            },
+            {
+                "title": "Sashimi",
+                "icon": "",
+                "trivia": ""
+            },
+            {
+                "title": "Maki",
+                "icon": "",
+                "trivia": ""
+            },
+            {
+                "title": "Uramaki",
+                "icon": "",
+                "trivia": ""
+            },
+            {
+                "title": "Temaki",
+                "icon": "",
+                "trivia": ""
+            },
+            {
+                "title": "Gunkan",
+                "icon": "",
+                "trivia": ""
+            },
+            {
+                "title": "Inarizushi",
+                "icon": "",
+                "trivia": ""
+            },
+            {
+                "title": "Wasabi",
+                "icon": "",
+                "trivia": ""
+            }
+        ]
     },
     {
         "id": 4,
         "title": "animals",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi, eius",
+        "background": "bg-garden.png",
+        "video": "",
         "thumbnail": "",
-        "route": "animals"
+        "route": "animals",
+        "trivias": [
+            {
+                "title": "",
+                "icon": "",
+                "trivia": ""
+            },
+            {
+                "title": "",
+                "icon": "",
+                "trivia": ""
+            },
+            {
+                "title": "",
+                "icon": "",
+                "trivia": ""
+            }
+        ]
     },
     {
         "id": 5,
         "title": "hobbies",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi, eius",
+        "background": "",
+        "video": "",
         "thumbnail": "",
-        "route": "hobbies"
+        "route": "hobbies",
+        "trivias": [
+            {
+                "title": "",
+                "icon": "",
+                "trivia": ""
+            },
+            {
+                "title": "",
+                "icon": "",
+                "trivia": ""
+            },
+            {
+                "title": "",
+                "icon": "",
+                "trivia": ""
+            }
+        ]
     }
 ]
