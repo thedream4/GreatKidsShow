@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <nav-bar style=""></nav-bar>
+    <nav-bar></nav-bar>
     <router-view class="views" />
   </div>
 </template>
@@ -29,9 +29,12 @@ export default {
   text-align: center;
   color: #2c3e50;
 }
-
+h1 {
+  margin: 0;
+  font-family:cursive;
+}
 .views {
-  margin-right: 10%;
+  padding-right: 10%;
 }
 
 /* CODE FOR SCROLLING GALLERY */
@@ -76,7 +79,7 @@ video {
 /* phone viewport */
 @media screen and (max-width: 480px) {
   .views {
-    margin-right: 0;
+    padding-right: 0;
   }
   .card-m {
     margin-right: 10px;

@@ -1,5 +1,4 @@
 <template>
-  <div>
     <section>
       <div v-for="game in games" v-bind:key="game._id">
         <md-card
@@ -30,9 +29,6 @@
         <br />
       </div>
     </section>
-    <!-- for each game in games db (declared and initalized in line 33 & 38), 
-    loop and display the content -->
-  </div>
 </template>
 
 <script>
