@@ -22,4 +22,8 @@ export default {
 };
 </script>
 <style scoped>
+video {
+  padding-left: 50px;
+  padding-right: 50px;
+}
 </style>

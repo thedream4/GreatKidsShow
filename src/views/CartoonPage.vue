@@ -56,20 +56,20 @@ import cartoonData from "../data/featuredCartoon.json";
 
 export default {
   name: "CartoonPage",
-  computed:{
-    validKey:function(){
-    for(let i=0;i<cartoonData.length;i++){
-        const d=cartoonData[i];
-        if(d.route===this.$route.params.key){
+  computed: {
+    validKey: function () {
+      for (let i = 0; i < cartoonData.length; i++) {
+        const d = cartoonData[i];
+        if (d.route === this.$route.params.key) {
           return true;
         }
       }
       return false;
     },
-    data:function(){
-      for(let i=0;i<cartoonData.length;i++){
-        const d=cartoonData[i];
-        if(d.route===this.$route.params.key){
+    data: function () {
+      for (let i = 0; i < cartoonData.length; i++) {
+        const d = cartoonData[i];
+        if (d.route === this.$route.params.key) {
           return d;
         }
       }
