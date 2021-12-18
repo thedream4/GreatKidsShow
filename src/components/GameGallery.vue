@@ -3,7 +3,7 @@
       <div v-for="game in games" v-bind:key="game._id">
         <md-card
           class="md-with-hover"
-          data-aos="zoom-in-up"
+          data-aos="flip-down"
           data-aos-duration="1000"
         >
           <md-ripple>

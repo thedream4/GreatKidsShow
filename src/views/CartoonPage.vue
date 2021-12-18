@@ -1,7 +1,7 @@
 <template>
   <section>
-    <img :src="cover(data.background)" alt="background image" id="bg-img" />
-    <div class="col1">
+    <img :src="cover(data.background)" alt="background image" class="bg-img" data-aos="fade-down" data-aos-duration="1500"  />
+    <div class="col1" data-aos="slide-right" data-aos-duration="1500">
       <p>
         Nav (pseudocode)
         <br />
@@ -13,7 +13,7 @@
       </p>
     </div>
 
-    <div class="col2">
+    <div class="col2" data-aos="zoom-in" data-aos-duration="1500">
       <div>
         <div v-if="validKey">
           <h1>
@@ -103,7 +103,7 @@ export default {
 </script>
 
 <style scoped>
-#bg-img {
+.bg-img {
   border-radius: 0%;
   position: fixed;
   z-index: -1;

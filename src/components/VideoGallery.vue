@@ -3,8 +3,6 @@
     <div class="viewport">
       <div class="container">
         <div
-          data-aos="slide-left"
-          data-aos-duration="1500"
           v-for="cartoon in cartoons"
           v-bind:key="cartoon._id"
           @click="route(cartoon.route)"

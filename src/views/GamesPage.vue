@@ -1,7 +1,7 @@
 <template>
   <div>
-    <h1>This is Games Page</h1>
-    <GameCards />
+    <h1  data-aos="fade-up" data-aos-duration="1500">This is Games Page</h1>
+    <GameCards  data-aos="fade-up" data-aos-duration="1500"/>
   </div>
 </template>
 
@@ -16,5 +16,8 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+div{
+  background-color:beige;
+}
 </style>
