@@ -5,20 +5,23 @@
         <div
           data-aos="slide-left"
           data-aos-duration="1500"
-          class="card-m"
           v-for="cartoon in cartoons"
           v-bind:key="cartoon._id"
           @click="route(cartoon.route)"
         >
           <md-ripple>
-            <img
-              :src="cover(cartoon.thumbnail)"
-              alt="food"
-              style="width: 100%; height: auto"
-            />
-            <div>
-              <h3>☆ {{ cartoon.title }} ☆</h3>
-              {{ cartoon.description }}
+            <div class="card" style="width: 18rem">
+              <img
+                :src="cover(cartoon.thumbnail)"
+                alt="food"
+                style="width: 100%; height: auto"
+              />
+              <div class="card-body">
+                <div class="card-text">
+                  <h3>☆ {{ cartoon.title }} ☆</h3>
+                  {{ cartoon.description }}
+                </div>
+              </div>
             </div>
           </md-ripple>
         </div>
@@ -58,4 +61,7 @@ export default {
 </script>
 
 <style scoped>
+.card {
+  height: 50vh;
+}
 </style>

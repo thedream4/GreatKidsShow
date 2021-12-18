@@ -52,28 +52,10 @@ h1 {
   overflow: scroll;
   padding: 5px;
 }
-.card-m {
-  margin-right: 10px;
-  border: 1px solid gray;
-  border-radius: 10%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 2px;
-  box-shadow: 2px 2px 3px black;
-  min-width: 25vw;
-  min-height: 300px;
-}
-
-img {
-  border-radius: 15%;
-  width: 100%;
-  /* max-height: 40vh; */
-}
 /* END CODE FOR SCROLLING GALLERY */
 
 video {
-  width: 100%;
+  width: 80%;
 }
 
 /* phone viewport */
@@ -81,10 +63,9 @@ video {
   .views {
     padding-right: 0;
   }
-  .card-m {
-    margin-right: 10px;
-    min-width: 40vw;
-    min-height: 30vh;
+  video{
+    width:100%;
+    padding:0;
   }
 }
 </style>

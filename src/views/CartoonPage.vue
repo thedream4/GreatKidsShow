@@ -106,10 +106,10 @@ export default {
 #bg-img {
   border-radius: 0%;
   position: fixed;
-  left: 0;
   z-index: -1;
   object-fit: cover;
   height: 100vh;
+  width:100vw;
 }
 section {
   background-size: cover;
@@ -145,9 +145,6 @@ section {
   .col1 {
     position: fixed;
     bottom: 0;
-  }
-  video {
-    width: 100%;
   }
 }
 </style>
