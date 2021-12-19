@@ -1,13 +1,14 @@
 <template>
   <div>
-    <img src="../assets/bg-garden.png" alt="background image" class="bg-img" data-aos="fade-down" data-aos-duration="1500" />
+    <img v-if="bg === 1" src="../assets/bg-garden.png" alt="background image" class="bg-img" data-aos="fade-down" data-aos-duration="1500" />
+    <img v-else-if="bg === 2" src="../assets/bg-mount.jpg" alt="background image" class="bg-img" data-aos="fade-down" data-aos-duration="1500" />
+    <img  v-else-if="bg === 3" src="../assets/bg-garden.png" alt="background image" class="bg-img" data-aos="fade-down" data-aos-duration="1500" />
+    <img  v-else src="../assets/bg-mount.jpg" alt="background image" class="bg-img" data-aos="fade-down" data-aos-duration="1500" />
     <div style="display:flex; justify-content:space-evenly; align-items:center;">
-      <md-button>Mountain</md-button>
-      <md-button>Beach</md-button>
-      <md-button>Skyline</md-button>
-      <md-button>Garden</md-button>
-      <!-- pseudocode: button @click will trigger an if-else function 
-      use v-if on the img tags to dynamically change bg image -->
+      <md-button @click="bg=0">Mountain</md-button>
+      <md-button @click="bg=1">Beach</md-button>
+      <md-button @click="bg=2">Skyline</md-button>
+      <md-button @click="bg=3">Garden</md-button>
     </div>
     <h1 data-aos="fade-up" data-aos-duration="900">HOME</h1>
 
@@ -44,6 +45,11 @@ import trendingCartoonData from "@/data/trendingCartoon.json";
 
 export default {
   name: "HomePage",
+  data: function() {
+    return {
+      bg: 0
+    }
+  },
   components: {
     VideoGallery,
   },
