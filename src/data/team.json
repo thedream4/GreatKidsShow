@@ -1,6 +1,7 @@
 [
     {
         "name": "Keoy Shon Tzu",
+        "ID": "BMC1904254 | 897147",
         "photo": "ProfilePic1.png",
         "Age": 21,
         "expertise": "Web Development",
@@ -21,6 +22,7 @@
     },
     {
         "name": "Ngeo Jia Jun",
+        "ID": "BMC1904134 | 897124",
         "photo": "ProfilePic2.png",
         "Age": 21,
         "expertise": "Game Development",
@@ -41,9 +43,10 @@
     },
     {
         "name": "Chan Vern Yi",
+        "ID": "BMC1904124 | 897123",
         "photo": "ProfilePic3.png",
         "Age": 21,
-        "expertise": "Web and Graphics",
+        "expertise": "Web & Graphics Production",
         "socials": {
             "IG": {
                 "icon": "icon-IG.png",
@@ -61,9 +64,10 @@
     },
     {
         "name": "Chong Jia Yuen",
+        "ID": "BMC1904125",
         "photo": "ProfilePic4.png",
         "Age": 21,
-        "expertise": "Graphics designer",
+        "expertise": "Graphics & Video Production",
         "socials": {
             "IG": {
                 "icon": "icon-IG.png",
@@ -81,9 +85,10 @@
     },
     {
         "name": "Leong Shii Tsong",
+        "ID": "BMC1904211",
         "photo": "ProfilePic5.png",
         "Age": 21,
-        "expertise": "Content creator",
+        "expertise": "Multimedia & Content Writer",
         "socials": {
             "IG": {
                 "icon": "icon-IG.png",
