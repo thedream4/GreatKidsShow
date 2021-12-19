@@ -1,7 +1,16 @@
 <template>
   <div>
     <img src="../assets/bg-garden.png" alt="background image" class="bg-img" data-aos="fade-down" data-aos-duration="1500" />
+    <div style="display:flex; justify-content:space-evenly; align-items:center;">
+      <md-button>Mountain</md-button>
+      <md-button>Beach</md-button>
+      <md-button>Skyline</md-button>
+      <md-button>Garden</md-button>
+      <!-- pseudocode: button @click will trigger an if-else function 
+      use v-if on the img tags to dynamically change bg image -->
+    </div>
     <h1 data-aos="fade-up" data-aos-duration="900">HOME</h1>
+
     <!-- Introduction video -->
     <video controls data-aos="slide-right" data-aos-duration="1500">
       <source src="" type="video/mp4" />
