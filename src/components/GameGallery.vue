@@ -20,7 +20,7 @@
                 </md-card-header>
 
                 <md-card-actions>
-                  <md-button>PLAY</md-button>
+                  <md-button v-on:click.native="open(game._id)">PLAY</md-button>
                 </md-card-actions>
               </md-card-area>
             </md-card-media-cover>
@@ -54,11 +54,14 @@ export default {
       } else url = require("@/assets/default.jpg"); // use a default image if url empty
       return url;
     },
+    open(id){
+      this.$router.push(`/games/${id}`);
+    }
   },
 };
 </script>
 
-<!-- "scoped" attribute limits CSS to this component 
+<!-- "scoped" attribute limits CSS to this component
 and won't affect other components / pages -->
 <style scoped>
 section {
@@ -85,5 +88,5 @@ img {
 }
 </style>
 
-<!-- I wonder if our professors ever reads our commenting at all :'3 
+<!-- I wonder if our professors ever reads our commenting at all :'3
 hope we can get some bonus marks for effort and commitment -->
