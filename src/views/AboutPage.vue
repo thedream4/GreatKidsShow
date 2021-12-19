@@ -6,7 +6,8 @@
     <TeamGallery data-aos="fade-up" data-aos-duration="1500" />
     
     <h2><i>☆☆☆ FAQ ☆☆☆</i></h2>
-    <Accordion />
+   <div style="width:80%; margin:auto;"><Accordion /></div> 
+
   </div>
 </template>
 

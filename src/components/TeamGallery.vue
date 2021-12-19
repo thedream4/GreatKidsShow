@@ -10,16 +10,15 @@
         >
           <md-ripple>
             <div class="card" style="width: 18rem">
-              <span class="card-title">{{ member.name.toUpperCase() }}</span>
+              <b class="card-title">{{ member.name.toUpperCase() }}</b>
               <img
                 :src="cover(member.photo)"
                 alt="member"
                 style="height: 250px"
               />
               <div class="card-body">
-                <p class="card-text">
-                  {{ member.expertise }}
-                </p>
+                <b class="card-text">{{ member.expertise }}</b>
+                <p>{{member.ID}}</p>
               </div>
               <div style="display: flex; flex-direction: row; justify-content:space-evenly;">
                 <div v-for="social in member.socials" v-bind:key="social._id">
