@@ -1,6 +1,5 @@
 <template>
   <div>
-    <h2><i>☆☆☆ ABOUT US ☆☆☆</i></h2>
     <div class="viewport">
       <div class="container">
         <div
