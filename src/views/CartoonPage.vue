@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section v-if="validKey">
     <img :src="cover(data.background)" alt="background image" class="bg-img" data-aos="fade-down" data-aos-duration="1500"  />
     <div class="col1" data-aos="slide-right" data-aos-duration="1500">
       <p>
@@ -15,18 +15,13 @@
 
     <div class="col2" data-aos="zoom-in" data-aos-duration="1500">
       <div>
-        <div v-if="validKey">
+        <div>
           <h1>
             <b>{{ data.title.toUpperCase() }}</b>
           </h1>
-          <video controls>
-            <source :src="video_url" type="video/mp4" />
-            <source :src="video_url" type="video/avi" />
+          <video controls :poster="cover(data.thumbnail)">
+            <source :src="video_url" :type="video_mime" />
           </video>
-        </div>
-        <div v-else>
-          Url /{{ $route.params.key }} is not existant
-          {{ validKey }}
         </div>
       </div>
       <div>
@@ -46,6 +41,11 @@
           voluptatibus culpa.
         </p>
       </div>
+    </div>
+  </section>
+  <section v-else>
+    <div class="col2">
+      Url /{{ $route.params.key }} is not existant
     </div>
   </section>
 </template>
@@ -78,12 +78,23 @@ export default {
     video_url: function () {
       let url = this.data.video;
       try {
-        url = require("@/assets/" + url); // match the url and use that image
+        if(url.length>0)
+          url = require("@/assets/" + url); // match the url and use that video
       } catch (e) {
-        console.log(e);
+        url=""; //return empty url in case it is inexistant
       }
       return url;
     },
+    video_mime: function(){
+      const url=this.video_url;
+      let mime=""; //empty mime force browser to automatically infer
+      //for now just construct the mime from the file extension
+      if(url.length>0){
+        const dots=url.split(".");
+        mime=`video/${dots[dots.length-1]}`;
+      }
+      return mime;
+    }
   },
   methods: {
     // "methods" is another word for "functions" in vue

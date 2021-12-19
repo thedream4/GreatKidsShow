@@ -4,6 +4,7 @@ import Home from '../views/HomePage.vue'
 import About from '../views/AboutPage.vue'
 import Games from '../views/GamesPage.vue'
 import Cartoon from '../views/CartoonPage.vue'
+import GameMainPage from '../views/GameMainPage.vue'
 
 // always tell vue to use the router otherwise no point defining the router array
 Vue.use(VueRouter)
@@ -19,6 +20,11 @@ const routes = [
     path: '/about',
     name: 'About',
     component: About,
+  },
+  {
+    path:"/games/:key",
+    name:"GameMainPage",
+    component:GameMainPage
   },
   {
     path: '/games',
