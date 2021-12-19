@@ -20,8 +20,8 @@
             <b>{{ data.title.toUpperCase() }}</b>
           </h1>
           <video controls>
-            <source :src="video_url" :alt="data.title" type="video/mp4" />
-            <source :src="video_url" :alt="data.title" type="video/avi" />
+            <source :src="video_url" type="video/mp4" />
+            <source :src="video_url" type="video/avi" />
           </video>
         </div>
         <div v-else>
@@ -80,7 +80,7 @@ export default {
       try {
         url = require("@/assets/" + url); // match the url and use that image
       } catch (e) {
-        url = require("@/assets/default.jpg"); // use a default image if error
+        console.log(err);
       }
       return url;
     },
