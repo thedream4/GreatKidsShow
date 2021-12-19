@@ -80,7 +80,7 @@ export default {
       try {
         url = require("@/assets/" + url); // match the url and use that image
       } catch (e) {
-        console.log(err);
+        console.log(e);
       }
       return url;
     },
