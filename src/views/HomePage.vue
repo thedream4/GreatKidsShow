@@ -1,10 +1,11 @@
 <template>
   <div>
-    <h1>HOME</h1>
-    <h2><i>☆☆☆ FEATURED ☆☆☆</i></h2>
-    <VideoGallery :cartoons="featuredCartoon" />
-    <h2><i>☆☆☆ TRENDING ☆☆☆</i></h2>
-    <VideoGallery :cartoons="trendingCartoon" />
+    <img src="../assets/bg-garden.png" alt="background image" class="bg-img" data-aos="fade-down" data-aos-duration="1500"  />
+    <h1 data-aos="fade-up" data-aos-duration="900">HOME</h1>
+    <h2 data-aos="fade-up" data-aos-duration="1500"><i>☆☆☆ FEATURED ☆☆☆</i></h2>
+    <VideoGallery :cartoons="featuredCartoon"  data-aos="slide-left" data-aos-duration="1500" />
+    <h2 data-aos="fade-up" data-aos-duration="1700"><i>☆☆☆ TRENDING ☆☆☆</i></h2>
+    <VideoGallery :cartoons="trendingCartoon"  data-aos="slide-left" data-aos-duration="1500"/>
     <br /><br /><br />
   </div>
 </template>
@@ -30,3 +31,15 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.bg-img {
+  border-radius: 0%;
+  position: fixed;
+  left:0;
+  z-index: -1;
+  object-fit: cover;
+  height: 100vh;
+  width:100vw;
+}
+</style>

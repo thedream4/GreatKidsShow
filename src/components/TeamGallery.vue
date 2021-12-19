@@ -6,24 +6,32 @@
         <div
           data-aos="flip-left"
           data-aos-duration="1500"
-          class="card-m"
           v-for="member in members"
           v-bind:key="member._id"
         >
           <md-ripple>
-            <img :src="cover(member.photo)" alt="member" style="height:250px;"/>
-              {{ member.name.toUpperCase() }} <br />{{ member.expertise }}
-            <div style="display: flex; flex-direction: row">
-              <div v-for="social in member.socials" v-bind:key="social._id">
-                <a :href="social.link" target="blank">
-                  <img :src="cover(social.icon)" alt="icon" id="icon" />
-                  <!-- calls function in line 51 -->
-                </a>
+            <div class="card" style="width: 18rem">
+              <span class="card-title">{{ member.name.toUpperCase() }}</span>
+              <img
+                :src="cover(member.photo)"
+                alt="member"
+                style="height: 250px"
+              />
+              <div class="card-body">
+                <p class="card-text">
+                  {{ member.expertise }}
+                </p>
+              </div>
+              <div style="display: flex; flex-direction: row; justify-content:space-evenly;">
+                <div v-for="social in member.socials" v-bind:key="social._id">
+                  <a :href="social.link" target="blank">
+                    <img :src="cover(social.icon)" alt="icon" id="icon" />
+                  </a>
+                </div>
               </div>
             </div>
           </md-ripple>
         </div>
-        <!-- end of card-m -->
       </div>
       <!-- end of container -->
     </div>
@@ -65,18 +73,5 @@ export default {
 <style scoped>
 #icon {
   width: 50px;
-}
-.card-m div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-@media screen and (max-width: 480px) {
-  img {
-    max-height: 150px;
-  }
-  #icon {
-    width: 25px;
-  }
 }
 </style>
