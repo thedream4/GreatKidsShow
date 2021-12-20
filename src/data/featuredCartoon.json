@@ -112,17 +112,17 @@
         "route": "animals",
         "trivias": [
             {
-                "title": "",
+                "title": "cat",
                 "icon": "",
                 "trivia": ""
             },
             {
-                "title": "",
+                "title": "dog",
                 "icon": "",
                 "trivia": ""
             },
             {
-                "title": "",
+                "title": "rabbit",
                 "icon": "",
                 "trivia": ""
             }
