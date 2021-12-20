@@ -3,7 +3,7 @@ module.exports = {
     module: {
       rules: [
         {
-          test: /\.(avi|mp4)$/i,
+          test: /\.(avi)$/i,
           loader: 'file-loader',
           options: {
             outputPath: 'video',
