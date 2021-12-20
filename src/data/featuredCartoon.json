@@ -28,26 +28,47 @@
     {
         "id": 2,
         "title": "vegetables",
-        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi, eius",
-        "background": "",
-        "video": "",
-        "thumbnail": "",
+        "description": "Lets watch the advanture that flut have with the vegetables!",
+        "background": "bg-garden.png",
+        "video": "vegetable-with-flut-and-flora.mp4",
+        "thumbnail": "Thumbnail-Vegetables.jpg",
         "route": "vegetables",
         "trivias": [
             {
-                "title": "",
+                "title": "Sweet Potato",
                 "icon": "",
-                "trivia": ""
+                "trivia": "Just roast it and it will become delicious."
             },
             {
-                "title": "",
+                "title": "Cabbage",
                 "icon": "",
-                "trivia": ""
+                "trivia": "Boil it with water if you hate its texture."
             },
             {
-                "title": "",
+                "title": "Broccolli",
                 "icon": "",
-                "trivia": ""
+                "trivia": "It is always harvested by hand."
+            },
+            {
+                "title":"Cucumber",
+                "icon":"",
+                "trivia":"Just peel, slice and enjoy!"
+            },
+            {
+                "title": "Carrot",
+                "icon": "",
+                "trivia": "It is good for your eye"
+            },
+            {
+                "title": "Onion",
+                "icon": "",
+                "trivia": "Bahave to not to touch the cut end or your eye will suffers..."
+            },
+
+            {
+                "title": "Potato",
+                "icon": "",
+                "trivia": "Boil and enjoy!"
             }
         ]
     },
