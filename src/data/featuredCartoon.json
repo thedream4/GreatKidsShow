@@ -112,9 +112,9 @@
         "route": "animals",
         "trivias": [
             {
-                "title": "cat",
+                "title": "meow",
                 "icon": "",
-                "trivia": ""
+                "trivia": "goes meow"
             },
             {
                 "title": "dog",
