@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Hello</title>
+    <style media="screen">
+      canvas{
+        width:800px;
+        height:500px;
+        margin:auto;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="canvas" width="800" height="500" tabindex="0"></canvas>
+    <script type="text/javascript">
+      window.audioContextSuspendOverride=true; //disable auto handling of suspend event
+    </script>
+    <script src="2d-animation-core.js" charset="utf-8"></script>
+    <script src="2d-animation-audio.js" charset="utf-8"></script>
+    <script src="index.js" charset="utf-8"></script>
+  </body>
+</html>
