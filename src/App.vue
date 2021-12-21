@@ -55,7 +55,13 @@ h1, h2, h3, h4, h5{
 /* END CODE FOR SCROLLING GALLERY */
 
 video {
-  width: 80%;
+  width: 70%;
+}
+
+@media screen and (max-width: 1000px) {
+  video {
+  width: 100%;
+}
 }
 
 /* phone viewport */

@@ -1,6 +1,12 @@
 <template>
   <section v-if="validKey">
-    <img :src="cover(data.background)" alt="background image" class="bg-img" data-aos="fade-down" data-aos-duration="1500"  />
+    <img
+      :src="cover(data.background)"
+      alt="background image"
+      class="bg-img"
+      data-aos="fade-down"
+      data-aos-duration="1500"
+    />
     <div class="col1" data-aos="slide-right" data-aos-duration="1500">
       <p>
         Nav (pseudocode)
@@ -14,48 +20,32 @@
     </div>
 
     <div class="col2" data-aos="zoom-in" data-aos-duration="1500">
-      <div>
-        <div>
-          <h1>
-            <b>{{ data.title.toUpperCase() }}</b>
-          </h1>
-          <video controls :poster="cover(data.thumbnail)">
-            <source :src="video_url" :type="video_mime" />
-          </video>
-        </div>
-      </div>
-      <div>
-        <p>
-          <b> //TODO: find in bootstrap library for a card component </b>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus,
-          molestiae architecto! Quisquam explicabo quaerat, vitae quis vel velit
-          voluptate! Repellendus sint quibusdam aliquam debitis saepe
-          exercitationem, quia optio sit minus consequuntur. Obcaecati numquam
-          neque maiores nulla pariatur quo nisi expedita debitis sed, vero sit
-          eum. Quidem ratione ipsa eligendi illo inventore neque! Aperiam quasi
-          rem porro aliquid illo, autem modi tempore eius voluptate! At
-          voluptatem deleniti exercitationem sunt provident quos maiores.
-          Excepturi beatae laboriosam eveniet iure, enim harum aspernatur porro
-          laudantium laborum eius error quas? Libero beatae delectus aliquid
-          incidunt vero necessitatibus eius amet itaque magnam iste maiores,
-          voluptatibus culpa.
-        </p>
-      </div>
+      <h1>
+        <b>{{ data.title.toUpperCase() }}</b>
+      </h1>
+      <video controls :poster="cover(data.thumbnail)" >
+        <source :src="video_url" :type="video_mime" />
+      </video>
+      <hr>
+      <TriviaCard style="display: flex; justify-content: space-around" />
+      <hr>
     </div>
   </section>
   <section v-else>
-    <div class="col2">
-      Url /{{ $route.params.key }} is not existant
-    </div>
+    <div class="col2">Url /{{ $route.params.key }} is not existant</div>
   </section>
 </template>
 
 <script>
 //import cartoonData
 import cartoonData from "../data/featuredCartoon.json";
+import TriviaCard from "../components/TriviaCard.vue";
 
 export default {
   name: "CartoonPage",
+  components: {
+    TriviaCard,
+  },
   computed: {
     validKey: function () {
       for (let i = 0; i < cartoonData.length; i++) {
@@ -78,23 +68,22 @@ export default {
     video_url: function () {
       let url = this.data.video;
       try {
-        if(url.length>0)
-          url = require("@/assets/" + url); // match the url and use that video
+        if (url.length > 0) url = require("@/assets/" + url); // match the url and use that video
       } catch (e) {
-        url=""; //return empty url in case it is inexistant
+        url = ""; //return empty url in case it is inexistant
       }
       return url;
     },
-    video_mime: function(){
-      const url=this.video_url;
-      let mime=""; //empty mime force browser to automatically infer
+    video_mime: function () {
+      const url = this.video_url;
+      let mime = ""; //empty mime force browser to automatically infer
       //for now just construct the mime from the file extension
-      if(url.length>0){
-        const dots=url.split(".");
-        mime=`video/${dots[dots.length-1]}`;
+      if (url.length > 0) {
+        const dots = url.split(".");
+        mime = `video/${dots[dots.length - 1]}`;
       }
       return mime;
-    }
+    },
   },
   methods: {
     // "methods" is another word for "functions" in vue
@@ -120,7 +109,7 @@ export default {
   z-index: -1;
   object-fit: cover;
   height: 100vh;
-  width:100vw;
+  width: 100vw;
 }
 section {
   background-size: cover;
@@ -130,32 +119,35 @@ section {
   height: 100vh;
 }
 .col1 {
+  position: fixed;
+  height: 100vh;
   width: 20vw;
   background-color: rgba(255, 255, 255, 0.5);
 }
 .col2 {
   width: 80vw;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 20vw; /* width of .col1 */
 }
 
-@media screen and (max-width: 1000px) {
-  .col1,
-  .col2 {
-    margin: 0;
-  }
-}
 @media screen and (max-width: 600px) {
   section {
     display: block;
   }
-  .col1,
-  .col2 {
+  video {
     width: 100vw;
-  }
+  }  
   .col1 {
-    position: fixed;
+    margin:0;
+    height: 15vh;
+    width: 100vw;
     bottom: 0;
+    z-index: 500;
+    background-color: white;
+  }
+  .col2 {
+    margin:0;
+    width: 100vw;
+    padding-bottom: 15vh; /* height of .col1 */
   }
 }
 </style>
