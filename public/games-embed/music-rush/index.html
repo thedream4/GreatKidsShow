@@ -4,21 +4,47 @@
     <meta charset="utf-8">
     <title>Hello</title>
     <style media="screen">
-      canvas{
+      .center{
         width:800px;
         height:500px;
         margin:auto;
         display: block;
       }
+      .center button{
+        width:200px;
+        height:100px;
+        font-weight: bold;
+        font-size:30px;
+      }
     </style>
   </head>
   <body>
-    <canvas id="canvas" width="800" height="500" tabindex="0"></canvas>
+    <canvas class="center" id="canvas" width="800" height="500" tabindex="0"></canvas>
+    <div class="center">
+      <button data-key="Escape">Esc</button>
+      <button data-key="ArrowUp">↑</button>
+      <button data-key="ArrowDown">↓</button>
+    </div>
     <script type="text/javascript">
       window.audioContextSuspendOverride=true; //disable auto handling of suspend event
     </script>
     <script src="2d-animation-core.js" charset="utf-8"></script>
     <script src="2d-animation-audio.js" charset="utf-8"></script>
     <script src="index.js" charset="utf-8"></script>
+    <script>
+      let canvas=document.querySelector('canvas');
+      let buts=document.querySelectorAll('button[data-key]');
+      function handler(obj){
+        const e=new KeyboardEvent("keydown",{
+          "key":obj.getAttribute("data-key")||"KeyP",
+          "code":obj.getAttribute("data-key")||"KeyP",
+        });
+        canvas.dispatchEvent(e); //simulate the click event
+        //lazy to design another UI for touch LMAO
+      }
+      for(let i=0;i<buts.length;i++){
+        buts[i].addEventListener("click",handler.bind(window,buts[i]));
+      }
+    </script>
   </body>
 </html>
