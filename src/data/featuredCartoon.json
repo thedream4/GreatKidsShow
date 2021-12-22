@@ -73,7 +73,28 @@
             {
                 "title": "DO NOT CLICK",
                 "icon": "",
-                "trivia": ""
+                "trivia": "It is always harvested by hand."
+            },
+            {
+                "title":"Cucumber",
+                "icon":"",
+                "trivia":"Just peel, slice and enjoy!"
+            },
+            {
+                "title": "Carrot",
+                "icon": "",
+                "trivia": "It is good for your eye"
+            },
+            {
+                "title": "Onion",
+                "icon": "",
+                "trivia": "Bahave to not to touch the cut end or your eye will suffers..."
+            },
+
+            {
+                "title": "Potato",
+                "icon": "",
+                "trivia": "Boil and enjoy!"
             }
         ]
     },
