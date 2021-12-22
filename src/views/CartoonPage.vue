@@ -11,10 +11,8 @@
       class="col1"
       data-aos="slide-right"
       data-aos-duration="1500"
-      v-for="cartoon in tihs.data"
-      v-bind:key="cartoon._id"
     >
-    <md-button v-for="trivia in cartoon.trivias" v-bind:key="trivia.id">
+    <md-button v-for="trivia in this.data.trivias" v-bind:key="trivia.id">
       {{trivia.title}}
     </md-button>
     </div>
