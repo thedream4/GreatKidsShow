@@ -12,7 +12,7 @@
               <img
                 :src="cover(cartoon.thumbnail)"
                 alt="food"
-                style="width: 100%; height: auto"
+                style="width: 100%; height: 200px"
               />
               <div class="card-body">
                 <div class="card-text">

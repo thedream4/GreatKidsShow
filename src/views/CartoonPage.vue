@@ -1,19 +1,17 @@
 <template>
-  <section v-if="validKey">
-    <img
-      :src="cover(data.background)"
-      alt="background image"
-      class="bg-img"
-      data-aos="fade-down"
-      data-aos-duration="1500"
-    />
+  <section v-if="validKey"> 
+    <img  :src="cover(data.background)"  alt="background image"  class="bg-img"  data-aos="fade-down"  data-aos-duration="1500"  />
+    <!-- .col1 is the navbar at the left of desktop vp / bottom of phone vp -->
     <div class="col1" data-aos="slide-right" data-aos-duration="1500">
-      <button v-for="trivia in this.data.trivias" v-bind:key="trivia.id" >
+      <!-- for each trivia in in the json database that is imported, 
+      loop through and create a button for each -->
+      <button v-for="trivia in this.data.trivias" v-bind:key="trivia.id">
         <h3>{{ trivia.title }}</h3>
         <img :src="cover(trivia.icon)" alt="icon" width="50px" />
       </button>
     </div>
-
+    <!-- .col2 is the content area where the cartoon video and trivia card 
+    is rendered based on what user click in .col1-->
     <div class="col2" data-aos="zoom-in" data-aos-duration="1500">
       <h1>
         <b>{{ data.title.toUpperCase() }}</b>
@@ -24,6 +22,7 @@
       <!-- <hr />
       <TriviaCard style="display: flex; justify-content: space-around" />
       <hr /> -->
+      <!-- TRIVIA CARD COMPONENT START HERE -->
       <b-card no-body class="overflow-hidden card" style="">
         <b-row no-gutters>
           <b-col md="6">
@@ -36,14 +35,15 @@
           </b-col>
           <b-col md="6">
             <md-ripple>
-              <b-card-body>    
+              <b-card-body>
                 <b-card-text>Title </b-card-text>
                 <b-card-text>Description </b-card-text>
-              </b-card-body>    
+              </b-card-body>
             </md-ripple>
           </b-col>
         </b-row>
       </b-card>
+      <!-- TRIVIA CARD COMPONENT END HERE -->
     </div>
   </section>
   <section v-else>
