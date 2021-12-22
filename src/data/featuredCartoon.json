@@ -2,7 +2,7 @@
     {
         "id": 1,
         "title": "fruits",
-        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi, eius",
+        "description": "How mamy types of fruits do you know? What do you know about them?",
         "background": "",
         "video": "",
         "thumbnail": "",
@@ -15,34 +15,6 @@
             },
             {
                 "title": "Lemon",
-<<<<<<< HEAD
-                "icon": "",
-                "trivia": ""
-            },
-            {
-                "title": "Grape",
-                "icon": "",
-                "trivia": ""
-            },
-            {
-                "title": "Pear",
-                "icon": "",
-                "trivia": ""
-            },
-            {
-                "title": "Mango",
-                "icon": "",
-                "trivia": ""
-            },
-            {
-                "title": "Orange",
-                "icon": "",
-                "trivia": ""
-            },
-            {
-                "title": "Cherry",
-=======
->>>>>>> vern-yi
                 "icon": "",
                 "trivia": "Lemons are a fruit produced by a lemon tree (Citrus limon) or one of its variants. Lemons are yellow and have a sour taste. They are used in foods and cleaning products."
             },
@@ -54,7 +26,7 @@
             {
                 "title": "Pear",
                 "icon": "",
-                "trivia": "Pears are similar to apples in that they have small seeds and grow on trees. They’re a good source of vitamin C and fiber. They’re available year-round, although they taste best from fall to winter. Pears can be made into pear butter or canned."
+                "trivia": "Pears are similar to apples in that they have small seeds and grow on trees. They/’re a good source of vitamin C and fiber. They/’re available year-round, although they taste best from fall to winter. Pears can be made into pear butter or canned."
             },
             {
                 "title": "Mango",
@@ -81,51 +53,19 @@
     {
         "id": 2,
         "title": "vegetables",
-        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi, eius",
+        "description": "You might hate vegetables but they are an important part of our health and lifestyle",
         "background": "",
         "video": "",
         "thumbnail": "",
         "route": "vegetables",
         "trivias": [
             {
-<<<<<<< HEAD
-                "title": "Sweet potato",
-=======
                 "title": "Sweet Potato",
->>>>>>> vern-yi
                 "icon": "",
                 "trivia": "The sweet potato is an important food source. It is very nutritious and high in vitamin A. The sweet potato is not related to yams or potatoes. The sweet potato plant is a climbing vine. Funnel-shaped flowers grow in clusters on the vines. The flowers are shaded with pink or rose violet."
             },
             {
                 "title": "Cabbage",
-<<<<<<< HEAD
-                "icon": "",
-                "trivia": ""
-            },
-            {
-                "title": "Brocolli",
-                "icon": "",
-                "trivia": ""
-            },
-            {
-                "title": "Cucumber",
-                "icon": "",
-                "trivia": ""
-            },
-            {
-                "title": "Carrot",
-                "icon": "",
-                "trivia": ""
-            },
-            {
-                "title": "Onion",
-                "icon": "",
-                "trivia": ""
-            },
-            {
-                "title": "Potato",
-=======
->>>>>>> vern-yi
                 "icon": "",
                 "trivia": "Cabbage is closely related to broccoli, Brussels sprouts and cauliflower. Cabbage is one of the oldest cultivated vegetables in Europe. It is part of human diet more than 1000 years. Cabbage has high nutritional value and it is often used in folk medicine for treatment of numerous diseases."
             },
@@ -164,7 +104,7 @@
     {
         "id": 3,
         "title": "sushi",
-        "description": "Let's learn about all the different types of sushi",
+        "description": "Let's learn about all the different types of sushi. Yummy!",
         "background": "bg-mount.jpg",
         "video": "sushi.avi",
         "thumbnail": "Thumbnail-Sushi.jpg",
@@ -215,10 +155,10 @@
     {
         "id": 4,
         "title": "animals",
-        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi, eius",
+        "description": "We all love animals! They are just so adorable. Mother nature sure has its wonders~",
         "background": "bg-garden.png",
-        "video": "",
-        "thumbnail": "vidcartoon-animal.mp4",
+        "video": "vidcartoon-animal.mp4",
+        "thumbnail": "",
         "route": "animals",
         "trivias": [
             {
@@ -228,34 +168,6 @@
             },
             {
                 "title": "Elephant",
-<<<<<<< HEAD
-                "icon": "",
-                "trivia": ""
-            },
-            {
-                "title": "Zebra",
-                "icon": "",
-                "trivia": ""
-            },
-            {
-                "title": "Stag",
-                "icon": "",
-                "trivia": ""
-            },
-            {
-                "title": "Giraffe",
-                "icon": "",
-                "trivia": ""
-            },
-            {
-                "title": "Hippo",
-                "icon": "",
-                "trivia": ""
-            },
-            {
-                "title": "Leopard",
-=======
->>>>>>> vern-yi
                 "icon": "",
                 "trivia": "Elephants are huge mammals that have a long trunk and big ears. African elephants are the largest land animals in the world!Baby elephants are called calves."
             },
@@ -300,7 +212,7 @@
     {
         "id": 5,
         "title": "hobbies",
-        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi, eius",
+        "description": "Healthy hobbies leads to a healthy lifestyle. Find out more",
         "background": "",
         "video": "",
         "thumbnail": "",
