@@ -9,12 +9,37 @@
         "route": "fruits",
         "trivias": [
             {
-                "title": "",
+                "title": "Apple",
                 "icon": "",
                 "trivia": ""
             },
             {
-                "title": "",
+                "title": "Lemon",
+                "icon": "",
+                "trivia": ""
+            },
+            {
+                "title": "Grape",
+                "icon": "",
+                "trivia": ""
+            },
+            {
+                "title": "Pear",
+                "icon": "",
+                "trivia": ""
+            },
+            {
+                "title": "Mango",
+                "icon": "",
+                "trivia": ""
+            },
+            {
+                "title": "Orange",
+                "icon": "",
+                "trivia": ""
+            },
+            {
+                "title": "Cherry",
                 "icon": "",
                 "trivia": ""
             },
@@ -35,12 +60,37 @@
         "route": "vegetables",
         "trivias": [
             {
-                "title": "",
+                "title": "Sweet potato",
                 "icon": "",
                 "trivia": ""
             },
             {
-                "title": "",
+                "title": "Cabbage",
+                "icon": "",
+                "trivia": ""
+            },
+            {
+                "title": "Brocolli",
+                "icon": "",
+                "trivia": ""
+            },
+            {
+                "title": "Cucumber",
+                "icon": "",
+                "trivia": ""
+            },
+            {
+                "title": "Carrot",
+                "icon": "",
+                "trivia": ""
+            },
+            {
+                "title": "Onion",
+                "icon": "",
+                "trivia": ""
+            },
+            {
+                "title": "Potato",
                 "icon": "",
                 "trivia": ""
             },
@@ -112,12 +162,37 @@
         "route": "animals",
         "trivias": [
             {
-                "title": "meoeeew",
+                "title": "Lion",
                 "icon": "",
                 "trivia": "goes meow"
             },
             {
-                "title": "dog",
+                "title": "Elephant",
+                "icon": "",
+                "trivia": ""
+            },
+            {
+                "title": "Zebra",
+                "icon": "",
+                "trivia": ""
+            },
+            {
+                "title": "Stag",
+                "icon": "",
+                "trivia": ""
+            },
+            {
+                "title": "Giraffe",
+                "icon": "",
+                "trivia": ""
+            },
+            {
+                "title": "Hippo",
+                "icon": "",
+                "trivia": ""
+            },
+            {
+                "title": "Leopard",
                 "icon": "",
                 "trivia": ""
             },

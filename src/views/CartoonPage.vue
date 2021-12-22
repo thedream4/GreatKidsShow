@@ -7,28 +7,28 @@
       data-aos="fade-down"
       data-aos-duration="1500"
     />
-    <div class="col1" data-aos="slide-right" data-aos-duration="1500">
-      <p>
-        Nav (pseudocode)
-        <br />
-        for each item in the trivia array, loop to display the nav link
-        <br />
-        on click of the navlink, dynamically render the content of trivia card
-        <br />
-        bootstrap reusable tab component? jQuery show/hide divs?
-      </p>
+    <div
+      class="col1"
+      data-aos="slide-right"
+      data-aos-duration="1500"
+      v-for="cartoon in tihs.data"
+      v-bind:key="cartoon._id"
+    >
+    <md-button v-for="trivia in cartoon.trivias" v-bind:key="trivia.id">
+      {{trivia.title}}
+    </md-button>
     </div>
 
     <div class="col2" data-aos="zoom-in" data-aos-duration="1500">
       <h1>
         <b>{{ data.title.toUpperCase() }}</b>
       </h1>
-      <video controls :poster="cover(data.thumbnail)" >
+      <video controls :poster="cover(data.thumbnail)">
         <source :src="video_url" :type="video_mime" />
       </video>
-      <hr>
+      <hr />
       <TriviaCard style="display: flex; justify-content: space-around" />
-      <hr>
+      <hr />
     </div>
   </section>
   <section v-else>
@@ -45,6 +45,11 @@ export default {
   name: "CartoonPage",
   components: {
     TriviaCard,
+  },
+  data() {
+    return {
+      cartoons: cartoonData,
+    };
   },
   computed: {
     validKey: function () {
@@ -135,9 +140,9 @@ section {
   }
   video {
     width: 100vw;
-  }  
+  }
   .col1 {
-    margin:0;
+    margin: 0;
     height: 15vh;
     width: 100vw;
     bottom: 0;
@@ -145,7 +150,7 @@ section {
     background-color: white;
   }
   .col2 {
-    margin:0;
+    margin: 0;
     width: 100vw;
     padding-bottom: 15vh; /* height of .col1 */
   }

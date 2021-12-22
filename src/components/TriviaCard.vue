@@ -14,10 +14,7 @@
           <md-ripple>
             <b-card-body title="Trivia">
               <b-card-text>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga
-                obcaecati dolores accusamus, corrupti aut, tenetur perspiciatis
-                quis, suscipit quidem adipisci aperiam! Alias fugiat assumenda
-                nobis tempore porro harum amet ullam.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae cumque modi officiis quidem neque, quas eius molestiae ut corrupti expedita.
               </b-card-text>
             </b-card-body>
           </md-ripple>
@@ -28,7 +25,12 @@
 </template>
 
 <script>
-export default {};
+export default {
+  name: 'TriviaCard',
+  props: {
+    name
+  },
+};
 </script>
 
 <style scoped>
