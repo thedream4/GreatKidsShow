@@ -27,7 +27,7 @@
     <h2 data-aos="fade-up" data-aos-duration="1700"><i>☆☆☆ TRENDING ☆☆☆</i></h2>
     <VideoGallery
       :cartoons="trendingCartoon"
-      data-aos="slide-right"
+      data-aos="slide-left"
       data-aos-duration="1500"
     />
     <br /><br /><br />

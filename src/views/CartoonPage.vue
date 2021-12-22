@@ -8,9 +8,12 @@
       data-aos-duration="1500"
     />
     <div class="col1" data-aos="slide-right" data-aos-duration="1500">
-      <button v-for="trivia in this.data.trivias" v-bind:key="trivia.id" style="height:50px;">
-        {{ trivia.title }}
-        <!-- <img :src="cover(trivia.icon)" alt="icon"  /> -->
+      <button
+        v-for="trivia in this.data.trivias"
+        v-bind:key="trivia.id"
+      >
+        <h3>{{ trivia.title }}</h3> 
+        <img :src="cover(trivia.icon)" alt="icon" width="50px"/>
       </button>
     </div>
 
@@ -127,6 +130,12 @@ section {
   margin-left: 20vw; /* width of .col1 */
 }
 
+button{
+  border: none;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 1px 2px 3px gray;
+}
+
 @media screen and (max-width: 600px) {
   section {
     display: block;
@@ -141,13 +150,16 @@ section {
     height: 15vh;
     bottom: 0;
     z-index: 500;
-    width:100%;
+    width: 100%;
     /* background-color: white; */
   }
   .col2 {
     margin: 0;
     width: 100vw;
     padding-bottom: 15vh; /* height of .col1 */
+  }
+  #hide{
+    visibility: hidden;
   }
 }
 </style>

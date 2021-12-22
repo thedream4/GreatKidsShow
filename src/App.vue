@@ -53,7 +53,6 @@ h1, h2, h3, h4, h5{
   padding: 5px;
 }
 /* END CODE FOR SCROLLING GALLERY */
-
 video {
   width: 70%;
 }
