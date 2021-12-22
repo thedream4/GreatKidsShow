@@ -19,6 +19,7 @@
       <video controls :poster="cover(data.thumbnail)">
         <source :src="video_url" :type="video_mime" />
       </video>
+      <hr>
       <!-- <hr />
       <TriviaCard style="display: flex; justify-content: space-around" />
       <hr /> -->
@@ -146,13 +147,23 @@ section {
   width: 80vw;
   margin-left: 20vw; /* width of .col1 */
 }
-
+.card{
+margin:auto;
+width:70%;
+height: 30vh;
+}
 button {
   border: none;
   background-color: rgba(255, 255, 255, 0.2);
   box-shadow: 1px 2px 3px gray;
 }
-
+@media screen and (max-width: 1000px) {
+  .card{
+    margin:0;
+    width:100%;
+    height:auto;
+  }
+}
 @media screen and (max-width: 600px) {
   section {
     display: block;
@@ -175,8 +186,6 @@ button {
     width: 100vw;
     padding-bottom: 15vh; /* height of .col1 */
   }
-  #hide {
-    visibility: hidden;
-  }
+
 }
 </style>
