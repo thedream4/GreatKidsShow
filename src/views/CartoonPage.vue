@@ -44,11 +44,6 @@ export default {
   components: {
     TriviaCard,
   },
-  data() {
-    return {
-      cartoons: cartoonData,
-    };
-  },
   computed: {
     validKey: function () {
       for (let i = 0; i < cartoonData.length; i++) {
