@@ -12,9 +12,9 @@
         </b-col>
         <b-col md="6">
           <md-ripple>
-            <b-card-body title="Trivia">
+            <b-card-body title="trivia.title">
               <b-card-text>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae cumque modi officiis quidem neque, quas eius molestiae ut corrupti expedita.
+                
               </b-card-text>
             </b-card-body>
           </md-ripple>
