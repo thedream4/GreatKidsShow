@@ -10,42 +10,42 @@
         "trivias": [
             {
                 "title": "Apple",
-                "icon": "",
+                "icon": "icon-apple.png",
                 "trivia": "Apples are an all-season fruit that comes in different colors and varieties. An apple helps in your good health and longevity, but an apple tree itself has a life expectancy of 100 years."
             },
             {
                 "title": "Lemon",
-                "icon": "",
+                "icon": "icon-lemon.png",
                 "trivia": "Lemons are a fruit produced by a lemon tree (Citrus limon) or one of its variants. Lemons are yellow and have a sour taste. They are used in foods and cleaning products."
             },
             {
                 "title": "Grape",
-                "icon": "",
+                "icon": "icon-grapes.png",
                 "trivia": "Grapes are bulb-shaped fruits. They can be eaten fresh, dried to make raisins, or crushed to make grape juice or wine. There are more than 8,000 varieties of grape. "
             },
             {
                 "title": "Pear",
-                "icon": "",
+                "icon": "icon-pear.png",
                 "trivia": "Pears are similar to apples in that they have small seeds and grow on trees. They’re a good source of vitamin C and fiber. They’re available year-round, although they taste best from fall to winter. Pears can be made into pear butter or canned."
             },
             {
                 "title": "Mango",
-                "icon": "",
+                "icon": "icon-mango.png",
                 "trivia": "Mangos originally grew in India over 5,000 years ago. Mangos are rich in vitamin A, which builds healthy eyes and bones; vitamin C, which is essential for healthy gums and teeth; and folate, an important nutrient for brain health."
             },
             {
                 "title": "Orange",
-                "icon": "",
+                "icon": "icon-orange.png",
                 "trivia": "An orange is a type of citrus fruit which people often eat. Oranges are a very good source of vitamins, especially vitamin C. Orange juice is an important part of many people's breakfast. The '0sweet orange', which is the kind that are most often eaten today."
             },
             {
                 "title": "Cherry",
-                "icon": "",
+                "icon": "icon-cherries.png",
                 "trivia": "A cherry is a fruit that grows on a tree or a bush. It is red in color, with a seed in the middle. It tastes slightly sour, and is often used to flavour cakes and ice cream, or is baked in a pie or cobbler."
             },
             {
                 "title": "DO NOT CLICK",
-                "icon": "",
+                "icon": "do-not-click.png",
                 "trivia": ""
             }
         ]
@@ -61,42 +61,42 @@
         "trivias": [
             {
                 "title": "Sweet Potato",
-                "icon": "",
+                "icon": "icon-sweet-potato.png",
                 "trivia": "The sweet potato is an important food source. It is very nutritious and high in vitamin A. The sweet potato is not related to yams or potatoes. The sweet potato plant is a climbing vine. Funnel-shaped flowers grow in clusters on the vines. The flowers are shaded with pink or rose violet."
             },
             {
                 "title": "Cabbage",
-                "icon": "",
+                "icon": "icon-cabbage.png",
                 "trivia": "Cabbage is closely related to broccoli, Brussels sprouts and cauliflower. Cabbage is one of the oldest cultivated vegetables in Europe. It is part of human diet more than 1000 years. Cabbage has high nutritional value and it is often used in folk medicine for treatment of numerous diseases."
             },
             {
                 "title": "Brocolli",
-                "icon": "",
+                "icon": "icon-broccoli.png",
                 "trivia": "Broccoli is a vegetable and is a member of the cabbage family. Broccoli is commonly green, but some variants are white or have a purple tint. Broccoli is high in many nutrients, including fiber, vitamin C, vitamin K, iron, and potassium. It also boasts more protein than most other vegetables."
             },
             {
                 "title": "Cucumber",
-                "icon": "",
+                "icon": "icon-cucumber.png",
                 "trivia": "Cucumbers are 96% water. Cucumbers get rid of bad breath. Most of the flavor in the cucumber comes from the seeds. Cucumbers have lots of vitamin C in them. Cucumbers have been eaten by people for thousands of years"
             },
             {
                 "title": "Carrot",
-                "icon": "",
+                "icon": "icon-carrots.png",
                 "trivia": "The carrot is a root vegetable with the most commonly eaten part being the taproot. The carrot is usually orange in colour although purple, red, white, and yellow varieties also exist. The natural sugars and sweetness of carrots allow them to be used in carrot cakes of western countries."
             },
             {
                 "title": "Onion",
-                "icon": "",
+                "icon": "icon-onion.png",
                 "trivia": "Onion is a plant bulb made up of crisp, fleshy layers. Valued for its flavor, it may be cooked or eaten raw. It has sharp or pungent flavor. The onion is an herb that belongs to the lily family. It is related to garlic, leeks, and chives."
             },
             {
                 "title": "Potato",
-                "icon": "",
+                "icon": "icon-potato.png",
                 "trivia": "The part of the potato that people eat is a tuber that grows under the ground. A potato contains a lot of starch and other carbohydrates. Potato usually has a light-brown or yellowish skin and is white or yellow inside. If the potato gets light on it, the tuber turns green and will be poisonous."
             },
             {
                 "title": "DO NOT CLICK",
-                "icon": "",
+                "icon": "do-not-click.png",
                 "trivia": ""
             }
         ]
@@ -112,42 +112,42 @@
         "trivias": [
             {
                 "title": "Nigiri",
-                "icon": "",
+                "icon": "icon-nigiri.png",
                 "trivia": "Nigiri sushi isn't rolled like maki. Instead, a thin slice of raw or cooked fish is layered atop a mound of vinegary rice. Typically, a small amount of wasabi is placed between the fish and the rice, though in some case, a small strip of toasted seaweed, or nori, may be used instead."
             },
             {
                 "title": "Sashimi",
-                "icon": "",
+                "icon": "icon-sashimi.png",
                 "trivia": "Sashimi is thinly sliced raw meat—usually fish, such as salmon or tuna—that is served without rice. Sushi is not raw fish, but rather vinegared rice that is mixed with other ingredients, which may or may not include raw fish."
             },
             {
                 "title": "Maki",
-                "icon": "",
+                "icon": "icon-maki.png",
                 "trivia": "Maki is made in rolls and sliced into round bite-size pieces. In a maki roll, the fish, vegetables or other ingredients are rolled up inside of seaweed (nori) and vinegared rice. Maki may contain pieces of raw or cooked seafood. However, there are fish-free varieties such as the cucumber roll and avocado roll."
             },
             {
                 "title": "Uramaki",
-                "icon": "",
+                "icon": "icon-uramaki.png",
                 "trivia": "Uramaki is one of 5 traditional sushi rolls, or makizushi, in traditional Japanese cuisine. The meaning of its name is, literally, “inside out” roll. It could be defined as a “rebel roll” because it goes against the usual norm of wrapping the roll of rice from the outside."
             },
             {
                 "title": "Temaki",
-                "icon": "",
+                "icon": "icon-temaki.png",
                 "trivia": "Temakizushi is a very literal Japanese word. Te is hand and maki is roll so, therefore, “hand roll sushi” is the meaning. It is a great party food because a host can prepare the sushi rice and all the fillings beforehand and everyone can enjoy to make their own hand roll sushi with the fillings they like."
             },
             {
                 "title": "Gunkan",
-                "icon": "",
+                "icon": "icon-gunkan.png",
                 "trivia": "'Gunkan' means 'Mothership' and consists of a small ball of rice wrapped in a thin band of dry seaweed and topped with various ingredients. Looking like a warship, gunkan can be served as gunkan sushi or sometimes also called gunkan maki."
             },
             {
                 "title": "Inarizushi",
-                "icon": "",
+                "icon": "icon-inari.png",
                 "trivia": "Inarizushi is a type of sushi, or rice ball, that's made with vinegared sushi rice, stuffed inside seasoned fried tofu skins. Before they can be stuffed, the fried tofu skins are boiled in dashi stock that's seasoned with soy sauce and sugar."
             },
             {
                 "title": "DO NOT CLICK",
-                "icon": "",
+                "icon": "do-not-click.png",
                 "trivia": ""
             }
         ]
@@ -163,48 +163,48 @@
         "trivias": [
             {
                 "title": "Lion",
-                "icon": "",
+                "icon": "icon-lion.png",
                 "trivia": "Lion is muscular, powerful and the second-largest cat after Tiger in the world. It inhabits savannas and grasslands and usually lives in groups called pride"
             },
             {
                 "title": "Elephant",
-                "icon": "",
+                "icon": "icon-elephant.png",
                 "trivia": "Elephants are huge mammals that have a long trunk and big ears. African elephants are the largest land animals in the world!Baby elephants are called calves."
             },
             {
                 "title": "Giraffe",
-                "icon": "",
+                "icon": "icon-giraffe.png",
                 "trivia": "Giraffes are the tallest living land animals. They are herbivoures. They live in open woodland or grassland where they eat the leaves from trees that other animals can't reach."
             },
             
             {
                 "title": "Stag",
-                "icon": "",
+                "icon": "icon-stag.png",
                 "trivia": "Stags have big antlers. They are herbivours and eat leaves. A male deer is called stag or buck, a female deer is called doe, and a young deer is called fawn."
             },
             
             {
                 "title": "Zebra",
-                "icon": "",
+                "icon": "icon-zebra.png",
                 "trivia": "Closely related to horses, zebras have thick bodies, thin legs, a tufted tail, and a long head and neck sporting a short mane. Their black-and-white stripes help them in confusing the predators and helping zebras to recognise each other."
             },
             
             {
                 "title": "Hippopotamus",
-                "icon": "",
+                "icon": "icon-hippopotamus.png",
                 "trivia": "Hippos are large semi-aquatic mammals, with a large barrel-shaped body, short legs, a short tail and an enormous head! They have greyish to muddy-brown skin, which fades to a pale pink colour underneath. They are considered the second largest land animal on Earth"
             },
             
             {
                 "title": "Leopard",
-                "icon": "",
+                "icon": "icon-leopard.png",
                 "trivia": "Leopards are considered to be the strongest member of the big cats. Leopards spend a lot of their time in trees. Their spotted coat camouflages them, making them blend in with the leaves of the tree"
             },
             
             
             {
                 "title": "DO NOT CLICK",
-                "icon": "",
+                "icon": "do-not-click.png",
                 "trivia": ""
             }
         ]
@@ -229,8 +229,33 @@
                 "trivia": ""
             },
             {
-                "title": "DO NOT CLICK",
+                "title": "",
                 "icon": "",
+                "trivia": ""
+            },
+            {
+                "title": "",
+                "icon": "",
+                "trivia": ""
+            },
+            {
+                "title": "",
+                "icon": "",
+                "trivia": ""
+            },
+            {
+                "title": "",
+                "icon": "",
+                "trivia": ""
+            },
+            {
+                "title": "",
+                "icon": "",
+                "trivia": ""
+            },
+            {
+                "title": "DO NOT CLICK",
+                "icon": "do-not-click.png",
                 "trivia": ""
             }
         ]
