@@ -7,14 +7,11 @@
       data-aos="fade-down"
       data-aos-duration="1500"
     />
-    <div
-      class="col1"
-      data-aos="slide-right"
-      data-aos-duration="1500"
-    >
-    <md-button v-for="trivia in this.data.trivias" v-bind:key="trivia.id">
-      {{trivia.title}}
-    </md-button>
+    <div class="col1" data-aos="slide-right" data-aos-duration="1500">
+      <button v-for="trivia in this.data.trivias" v-bind:key="trivia.id" style="height:50px;">
+        {{ trivia.title }}
+        <!-- <img :src="cover(trivia.icon)" alt="icon"  /> -->
+      </button>
     </div>
 
     <div class="col2" data-aos="zoom-in" data-aos-duration="1500">
@@ -121,6 +118,9 @@ section {
   height: 100vh;
   width: 20vw;
   background-color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 .col2 {
   width: 80vw;
@@ -135,12 +135,14 @@ section {
     width: 100vw;
   }
   .col1 {
+    display: flex;
+    flex-wrap: wrap;
     margin: 0;
     height: 15vh;
-    width: 100vw;
     bottom: 0;
     z-index: 500;
-    background-color: white;
+    width:100%;
+    /* background-color: white; */
   }
   .col2 {
     margin: 0;
