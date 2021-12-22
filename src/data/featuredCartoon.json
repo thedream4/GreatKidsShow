@@ -1,0 +1,204 @@
+[
+    {
+        "id": 1,
+        "title": "fruits",
+        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi, eius",
+        "background": "",
+        "video": "",
+        "thumbnail": "",
+        "route": "fruits",
+        "trivias": [
+            {
+                "title": "",
+                "icon": "",
+                "trivia": ""
+            },
+            {
+                "title": "",
+                "icon": "",
+                "trivia": ""
+            },
+            {
+                "title": "DO NOT CLICK",
+                "icon": "",
+                "trivia": ""
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "title": "vegetables",
+        "description": "Lets watch the advanture that flut have with the vegetables!",
+        "background": "bg-garden.png",
+        "video": "vegetable-with-flut-and-flora.mp4",
+        "thumbnail": "Thumbnail-Vegetables.jpg",
+        "route": "vegetables",
+        "trivias": [
+            {
+                "title": "Sweet Potato",
+                "icon": "",
+                "trivia": "Just roast it and it will become delicious."
+            },
+            {
+                "title": "Cabbage",
+                "icon": "",
+                "trivia": "Boil it with water if you hate its texture."
+            },
+            {
+                "title": "Broccolli",
+                "icon": "",
+                "trivia": "It is always harvested by hand."
+            },
+            {
+                "title":"Cucumber",
+                "icon":"",
+                "trivia":"Just peel, slice and enjoy!"
+            },
+            {
+                "title": "Carrot",
+                "icon": "",
+                "trivia": "It is good for your eye"
+            },
+            {
+                "title": "Onion",
+                "icon": "",
+                "trivia": "Bahave to not to touch the cut end or your eye will suffers..."
+            },
+
+            {
+                "title": "Potato",
+                "icon": "",
+                "trivia": "Boil and enjoy!"
+            },
+            {
+                "title": "DO NOT CLICK",
+                "icon": "",
+                "trivia": "It is always harvested by hand."
+            },
+            {
+                "title":"Cucumber",
+                "icon":"",
+                "trivia":"Just peel, slice and enjoy!"
+            },
+            {
+                "title": "Carrot",
+                "icon": "",
+                "trivia": "It is good for your eye"
+            },
+            {
+                "title": "Onion",
+                "icon": "",
+                "trivia": "Bahave to not to touch the cut end or your eye will suffers..."
+            },
+
+            {
+                "title": "Potato",
+                "icon": "",
+                "trivia": "Boil and enjoy!"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "title": "sushi",
+        "description": "Let's learn about all the different types of sushi",
+        "background": "bg-mount.jpg",
+        "video": "sushi.avi",
+        "thumbnail": "Thumbnail-Sushi.jpg",
+        "route": "sushi",
+        "trivias": [
+            {
+                "title": "Nigiri",
+                "icon": "",
+                "trivia": ""
+            },
+            {
+                "title": "Sashimi",
+                "icon": "",
+                "trivia": ""
+            },
+            {
+                "title": "Maki",
+                "icon": "",
+                "trivia": ""
+            },
+            {
+                "title": "Uramaki",
+                "icon": "",
+                "trivia": ""
+            },
+            {
+                "title": "Temaki",
+                "icon": "",
+                "trivia": ""
+            },
+            {
+                "title": "Gunkan",
+                "icon": "",
+                "trivia": ""
+            },
+            {
+                "title": "Inarizushi",
+                "icon": "",
+                "trivia": ""
+            },
+            {
+                "title": "DO NOT CLICK",
+                "icon": "",
+                "trivia": ""
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "title": "animals",
+        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi, eius",
+        "background": "bg-garden.png",
+        "video": "",
+        "thumbnail": "",
+        "route": "animals",
+        "trivias": [
+            {
+                "title": "meoeeew",
+                "icon": "",
+                "trivia": "goes meow"
+            },
+            {
+                "title": "dog",
+                "icon": "",
+                "trivia": ""
+            },
+            {
+                "title": "DO NOT CLICK",
+                "icon": "",
+                "trivia": ""
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "title": "hobbies",
+        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi, eius",
+        "background": "",
+        "video": "",
+        "thumbnail": "",
+        "route": "hobbies",
+        "trivias": [
+            {
+                "title": "",
+                "icon": "",
+                "trivia": ""
+            },
+            {
+                "title": "",
+                "icon": "",
+                "trivia": ""
+            },
+            {
+                "title": "DO NOT CLICK",
+                "icon": "",
+                "trivia": ""
+            }
+        ]
+    }
+]

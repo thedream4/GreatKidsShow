@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <nav-bar style=""></nav-bar>
+    <nav-bar></nav-bar>
     <router-view class="views" />
   </div>
 </template>
@@ -11,7 +11,7 @@ export default {
   components: {
     "nav-bar": NavBar,
   },
-  // uncomment line 16-18 before submission 
+  // uncomment line 16-18 before submission
   // alert will be called everytime the app refreshes
   // created: () => {
   //   alert("Let's Explore!");
@@ -29,9 +29,12 @@ export default {
   text-align: center;
   color: #2c3e50;
 }
-
+h1, h2, h3, h4, h5{
+  margin: 0;
+  font-family:cursive;
+}
 .views {
-  margin-right: 10%;
+  padding-right: 10%;
 }
 
 /* CODE FOR SCROLLING GALLERY */
@@ -49,31 +52,20 @@ export default {
   overflow: scroll;
   padding: 5px;
 }
-.card-m {
-  margin-right: 10px;
-  border: 1px solid gray;
-  border-radius: 10%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 2px;
-  box-shadow: 2px 2px 3px black;
-  min-width: 400px;
-}
 /* END CODE FOR SCROLLING GALLERY */
 
 video {
-  width: 100%;
+  width: 80%;
 }
 
 /* phone viewport */
 @media screen and (max-width: 480px) {
   .views {
-    margin-right: 0;
+    padding-right: 0;
   }
-  .card-m {
-    margin-right: 10px;
-    width: 200px;
+  video{
+    width:100%;
+    padding:0;
   }
 }
 </style>

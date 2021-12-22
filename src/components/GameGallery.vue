@@ -1,10 +1,9 @@
 <template>
-  <div>
     <section>
       <div v-for="game in games" v-bind:key="game._id">
         <md-card
           class="md-with-hover"
-          data-aos="zoom-in-up"
+          data-aos="flip-down"
           data-aos-duration="1000"
         >
           <md-ripple>
@@ -21,7 +20,7 @@
                 </md-card-header>
 
                 <md-card-actions>
-                  <md-button>PLAY</md-button>
+                  <md-button v-on:click.native="open(game._id)">PLAY</md-button>
                 </md-card-actions>
               </md-card-area>
             </md-card-media-cover>
@@ -30,9 +29,6 @@
         <br />
       </div>
     </section>
-    <!-- for each game in games db (declared and initalized in line 33 & 38), 
-    loop and display the content -->
-  </div>
 </template>
 
 <script>
@@ -58,11 +54,14 @@ export default {
       } else url = require("@/assets/default.jpg"); // use a default image if url empty
       return url;
     },
+    open(id){
+      this.$router.push(`/games/${id}`);
+    }
   },
 };
 </script>
 
-<!-- "scoped" attribute limits CSS to this component 
+<!-- "scoped" attribute limits CSS to this component
 and won't affect other components / pages -->
 <style scoped>
 section {
@@ -89,5 +88,5 @@ img {
 }
 </style>
 
-<!-- I wonder if our professors ever reads our commenting at all :'3 
+<!-- I wonder if our professors ever reads our commenting at all :'3
 hope we can get some bonus marks for effort and commitment -->

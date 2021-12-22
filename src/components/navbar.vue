@@ -32,10 +32,9 @@
   width: 10%;
   float: right;
   top: 0;
-  box-shadow: 1px 2px 3px #42b983;
   position: fixed;
   right: 0;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.5);
   z-index:1000;
 }
 
@@ -51,13 +50,14 @@ p {
   align-items: center;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
   #nav {
     width: 100%;
     display: flex;
     top: 0;
     position: sticky;
     margin-bottom: 20px;
+    /* background-color: rgba(255, 255, 255, 0.5) */
   }
   p {
     height: 5vh;
