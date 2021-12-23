@@ -1,0 +1,10 @@
+{
+  "build_stamp":"Tue Dec 07 2021 16:02:17 GMT+0900",
+  "songs":[
+    {
+      "name":"Happy Day",
+      "key":"happy-day",
+      "excitingPtsMax":200
+    }
+  ]
+}
