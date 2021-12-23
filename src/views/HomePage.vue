@@ -37,12 +37,14 @@
     />
     <!-- end horizontal scrolling gallery -->
     <br /><br /><br />
+    <Modal />
   </div>
 </template>
 
 <script>
 import { ref } from "@vue/composition-api";
 import VideoGallery from "../components/VideoGallery.vue";
+import Modal from "../components/ModalWelcome.vue"
 import featuredCartoonData from "@/data/featuredCartoon.json";
 import trendingCartoonData from "@/data/trendingCartoon.json";
 // if your crush knows binary
@@ -58,7 +60,9 @@ export default {
   },
   components: {
     VideoGallery,
+    Modal,
   },
+
   setup() {
     const featuredCartoon = ref(featuredCartoonData);
     const trendingCartoon = ref(trendingCartoonData);
