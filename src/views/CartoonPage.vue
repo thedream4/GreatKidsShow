@@ -16,7 +16,7 @@
       <h1>
         <b>{{ data.title.toUpperCase() }}</b>
       </h1>
-      <video controls :poster="cover(data.thumbnail)">
+      <video controls :poster="cover(data.thumbnail)" :key="data.route">
         <source :src="video_url" :type="video_mime" />
       </video>
       <!-- TRIVIA CARD COMPONENT START HERE -->
