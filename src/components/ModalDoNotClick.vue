@@ -1,15 +1,7 @@
 <template>
   <div v-if="shown" v-on:click="shown=false">
     <span>
-      <img v-if="gif == 1" src="../assets/giphy1.gif"/>
-      <img v-else-if="gif == 2" src="../assets/giphy2.gif" />
-      <img v-else-if="gif == 3" src="../assets/giphy3.gif" />
-      <img v-else-if="gif == 4" src="../assets/giphy4.gif" />
-      <img v-else-if="gif == 5" src="../assets/giphy5.gif" />
-      <img v-else-if="gif == 6" src="../assets/giphy6.gif" />
-      <img v-else-if="gif == 7" src="../assets/giphy7.gif" />
-      <img v-else-if="gif == 8" src="../assets/giphy8.gif" />
-      <img v-else src="../assets/giphy9.gif" />
+      <img :src="gif_url"/>
     </span>
   </div>
 </template>
@@ -23,8 +15,18 @@ export default {
     };
   },
   computed: {
-    gif: function() { 
-        return Math.floor(Math.random() * 10 + 1);
+    gif_url: function() {
+        if(!this.shown){
+          return "";
+        }
+        else{
+          try{
+            return require(`../assets/giphy${Math.floor(Math.random() * 10 + 1)}.gif`);
+          }
+          catch(e){
+            return "";
+          }
+        }
     },
   },
 };
