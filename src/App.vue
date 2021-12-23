@@ -11,11 +11,6 @@ export default {
   components: {
     "nav-bar": NavBar,
   },
-  // uncomment line 16-18 before submission
-  // alert will be called everytime the app refreshes
-  // created: () => {
-  //   alert("Let's Explore!");
-  // },
 };
 </script>
 
@@ -28,6 +23,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  overflow-x:hidden;
 }
 h1, h2, h3, h4, h5{
   margin: 0;
@@ -57,6 +53,7 @@ video {
   width: 70%;
 }
 
+/* tablet viewport */
 @media screen and (max-width: 1000px) {
   video {
   width: 100%;

@@ -2,14 +2,14 @@
   {
     "_id": 1,
     "title": "Snakes and Ladders",
-    "description": "some game description here",
+    "description": "climb the ladders, avoid stepping on the snakes! Get to the end of the board to win the game!",
     "thumbnail": "ThumbnailSnakesAndLadder.jpg",
-    "link": ""
+    "link": "/games-embed/snakes-and-ladders/index.html"
   },
   {
     "_id": 2,
     "title": "Music Rush",
-    "description": "some game description here",
+    "description": "Collect music nodes, don't run into the bombs! Try to break the highest score~",
     "thumbnail": "ThumbnailMusicRush.jpg",
     "link": "/games-embed/music-rush/index.html"
   }

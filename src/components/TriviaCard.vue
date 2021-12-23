@@ -1,21 +1,17 @@
 <template>
   <div>
+    <!-- bootstrap library card -->
     <b-card no-body class="overflow-hidden card" style="">
       <b-row no-gutters>
         <b-col md="6">
           <md-ripple>
-            <b-card-img
-              :src="cover(trivia.icon)"
-              :alt="trivia.title"
-            ></b-card-img>
+            <b-card-img  :src="cover(trivia.icon)"  :alt="trivia.title" ></b-card-img>
           </md-ripple>
         </b-col>
         <b-col md="6">
           <md-ripple>
             <b-card-body :title="trivia.title">
-              <b-card-text>
-                {{trivia.trivia}}
-              </b-card-text>
+              <b-card-text>{{trivia.trivia}}</b-card-text>
             </b-card-body>
           </md-ripple>
         </b-col>

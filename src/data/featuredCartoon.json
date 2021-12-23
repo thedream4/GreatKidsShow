@@ -208,24 +208,42 @@
         "title": "hobbies",
         "background": "bg-hobbies.png",
         "description": "Healthy hobbies leads to a healthy lifestyle. Find out more",
-        "video": "",
-        "thumbnail": "",
+        "video": "vidcartoon-hobby.mp4",
+        "thumbnail": "thumbnail-hobby.jpg",
         "route": "hobbies",
         "trivias": [
-            {
-                "title": "Cooking",
-                "icon": "icon-cooking.png",
-                "trivia": "Cooking or cookery is the art, technology and craft of preparing food for consumption with or without the use of heat. Cooking techniques and ingredients vary widely across the world, from grilling food over an open fire to using electric stoves, to baking in various types of ovens, reflecting unique environmental, economic, and cultural traditions and trends."
-            },
+            
             {
                 "title": "Drawing",
                 "icon": "icon-drawing.png",
                 "trivia": "Drawing is a way of making a picture. Drawings are created by making lines on a surface. Long lines make up the shapes and small lines make the textures. Drawings can be images of real life or abstract images showing ideas cannot be seen in the real world."
             },
             {
-                "title": "Jogging",
-                "icon": "icon-jogging.png",
-                "trivia": "Jogging is running at a slow speed. Many people go for a jog in order to keep fit and healthy. People go jogging for exercise, not for competitions. Jogging is a very cheap way of keeping fit, because all that is needed is a good pair of running shoes."
+                "title": "Reading",
+                "icon": "icon-read.png",
+                "trivia": "One of the reasons why reading is the best hobby is because it expands your horizons. It gives you something new and different to enjoy. You can learn practically anything from reading a good book on the subject. Even if you choose to read fiction, you may learn something that is helpful in your life."
+            },
+            {
+                "title": "Dancing",
+                "icon": "icon-dance.png",
+                "trivia": "Dance as a hobby is almost like finding a new person inside you. Dance as a hobby also instils confidence in you. Practice certainly makes a person skilled in any field and this holds good for dance too. It is important to dedicate some time for practice as certain steps require practice."
+            },
+            {
+                "title": "Playing Music Instruments",
+                "icon": "icon-guitar.png",
+                "trivia": "Learning to play musical instruments is like learning a new language, a universal language. When choosing which instrument you would like to learn, you should first think about how you are going to use the instrument. There are many different styles of music, like classical, jazz, pop etc. Music is an important part of many different cultures all around the world from ancient times to modern day."
+            },{
+                "title": "Singing",
+                "icon": "icon-singing.png",
+                "trivia": "Singing is an excellent hobby that can help you to express yourself, create an identity, and is even known to improve happiness when performed as a group."
+            },{
+                "title": "Gaming",
+                "icon": "icon-gaming.png",
+                "trivia": "Gaming is actually a major way in which you can learn, improve, and practice your problem-solving skills. And this is another one of those things that you use every single day, in a variety of different scenarios, and you don't even realize it."
+            },{
+                "title": "Basketball",
+                "icon": "icon-basketball.png",
+                "trivia": "Basketball is a great way to get your mind off things and is also a great way to express yourself. It is a sport that can work your whole body. It's a great pastime for any one and is a great way to bond with family members and friends."
             },
             {
                 "title": "DO NOT CLICK",

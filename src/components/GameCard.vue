@@ -1,11 +1,8 @@
 <template>
     <section>
-      <div v-for="game in games" v-bind:key="game._id">
-        <md-card
-          class="md-with-hover"
-          data-aos="flip-down"
-          data-aos-duration="1000"
-        >
+      <div v-for="game in games" v-bind:key="game._id"> <!-- create a card for each game in local json database-->
+        <!-- bootstrap card again -->
+        <md-card  class="md-with-hover" data-aos="flip-down" data-aos-duration="1000" >
           <md-ripple>
             <md-card-media-cover md-text-scrim>
               <md-card-media md-text-scrim md-ratio="16:9">

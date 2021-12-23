@@ -5,14 +5,14 @@ import VueCompositionAPI from '@vue/composition-api'
 
 // you can import anything here: bootstrap, css, libraries...
 import BootstrapVue from 'bootstrap-vue' // Bootstrap component library
-import 'bootstrap/dist/css/bootstrap.css'
-import 'bootstrap-vue/dist/bootstrap-vue.css'
+import 'bootstrap/dist/css/bootstrap.css' // minified
+import 'bootstrap-vue/dist/bootstrap-vue.css' // twitter bootstrap for vue
 
 import VueMaterial from 'vue-material'; //ripple effect
-import 'vue-material/dist/vue-material.min.css'
+import 'vue-material/dist/vue-material.min.css' //minified
 
 import AOS from 'aos'; //scroll animation
-import 'aos/dist/aos.css';
+import 'aos/dist/aos.css'; //minified
 
 // disable the "development mode" warning on console
 Vue.config.productionTip = false

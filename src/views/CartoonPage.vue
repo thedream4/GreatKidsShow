@@ -5,7 +5,7 @@
     <div class="col1" data-aos="slide-right" data-aos-duration="1500">
       <!-- for each trivia in in the json database that is imported,
       loop through and create a button for each -->
-      <button v-for="(trivia,index) in data.trivias" v-bind:key="index" v-on:click="switchTrivia(index)">
+      <button v-for="(trivia,index) in data.trivias" v-bind:key="index" v-on:click="switchTrivia(index), emitSound('http://soundbible.com/mp3/Air Plane Ding-SoundBible.com-496729130.mp3')">
         <h3>{{ trivia.title }}</h3>
         <img :src="cover(trivia.icon)" alt="icon" width="50px" />
       </button>
@@ -16,7 +16,7 @@
       <h1>
         <b>{{ data.title.toUpperCase() }}</b>
       </h1>
-      <video controls :poster="cover(data.thumbnail)">
+      <video controls :poster="cover(data.thumbnail)" :key="data.route">
         <source :src="video_url" :type="video_mime" />
       </video>
       <!-- TRIVIA CARD COMPONENT START HERE -->
@@ -24,6 +24,9 @@
       <TriviaCard style="display: flex; justify-content: space-around" ref="card" :trivia="data.trivias[0]"/>
       <hr />
       <!-- TRIVIA CARD COMPONENT END HERE -->
+
+      <!-- how to toggle visibility when user click the "DO NOT CLICK" button -->
+      <doNotClick ref="dont_click_modal"/>
     </div>
   </section>
   <section v-else>
@@ -35,11 +38,13 @@
 //import cartoonData
 import cartoonData from "../data/featuredCartoon.json";
 import TriviaCard from "../components/TriviaCard.vue";
+import doNotClick from "../components/ModalDoNotClick.vue";
 
 export default {
   name: "CartoonPage",
   components: {
     TriviaCard,
+    doNotClick,
   },
   computed: {
     validKey: function () {
@@ -105,8 +110,14 @@ export default {
         this.$refs.card.trivia=this.data.trivias[idx]; //programmatically update the object LOL
       }
     },
+    emitSound (sound) {
+      if(sound) {
+        var audio = new Audio(sound);
+        audio.play();
+      }
+    },
     dontClick_hit(){
-
+      this.$refs["dont_click_modal"].shown=true;
     }
   },
 };
