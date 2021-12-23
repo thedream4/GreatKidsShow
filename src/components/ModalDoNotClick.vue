@@ -2,15 +2,15 @@
   <div v-if="shown" v-on:click="shown = false">
     <span>
       <h1>I TOLD YOU NOT TO CLICK</h1>
-      <h3 v-if="gif == 1">*Gif1*</h3>
-      <h3 v-else-if="gif == 2">*Gif2*</h3>
-      <h3 v-else-if="gif == 3">*Gif3*</h3>
-      <h3 v-else-if="gif == 4">*Gif4*</h3>
-      <h3 v-else-if="gif == 5">*Gif5*</h3>
-      <h3 v-else-if="gif == 6">*Gif6*</h3>
-      <h3 v-else-if="gif == 8">*Gif8*</h3>
-      <h3 v-else-if="gif == 9">*Gif9*</h3>
-      <h3 v-else>*Gif10*</h3>
+      <img v-if="gif == 1" src="" />
+      <img v-else-if="gif == 2" src="../assets/icon-onion.png" />
+      <img v-else-if="gif == 3" src="../assets/icon-orange.png" />
+      <img v-else-if="gif == 4" src="../assets/icon-pear.png" />
+      <img v-else-if="gif == 5" src="../assets/icon-potato.png" />
+      <img v-else-if="gif == 6" src="../assets/icon-sashimi.png" />
+      <img v-else-if="gif == 8" src="../assets/icon-stag.png" />
+      <img v-else-if="gif == 9" src="../assets/icon-sweet-potato.png" />
+      <img v-else src="../assets/icon-temaki.png" />
     </span>
   </div>
 </template>
