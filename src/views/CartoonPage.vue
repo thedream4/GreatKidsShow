@@ -1,16 +1,16 @@
 <template>
-  <section v-if="validKey"> 
+  <section v-if="validKey">
     <img  :src="cover(data.background)"  alt="background image"  class="bg-img"  data-aos="fade-down"  data-aos-duration="1500"  />
     <!-- .col1 is the navbar at the left of desktop vp / bottom of phone vp -->
     <div class="col1" data-aos="slide-right" data-aos-duration="1500">
-      <!-- for each trivia in in the json database that is imported, 
+      <!-- for each trivia in in the json database that is imported,
       loop through and create a button for each -->
-      <button v-for="trivia in this.data.trivias" v-bind:key="trivia.id">
+      <button v-for="(trivia,index) in data.trivias" v-bind:key="index" v-on:click="switchTrivia(index)">
         <h3>{{ trivia.title }}</h3>
         <img :src="cover(trivia.icon)" alt="icon" width="50px" />
       </button>
     </div>
-    <!-- .col2 is the content area where the cartoon video and trivia card 
+    <!-- .col2 is the content area where the cartoon video and trivia card
     is rendered based on what user click in .col1-->
     <div class="col2" data-aos="zoom-in" data-aos-duration="1500">
       <h1>
@@ -19,31 +19,10 @@
       <video controls :poster="cover(data.thumbnail)">
         <source :src="video_url" :type="video_mime" />
       </video>
-      <hr>
-      <!-- <hr />
-      <TriviaCard style="display: flex; justify-content: space-around" />
-      <hr /> -->
       <!-- TRIVIA CARD COMPONENT START HERE -->
-      <b-card no-body class="overflow-hidden card" style="">
-        <b-row no-gutters>
-          <b-col md="6">
-            <md-ripple>
-              <b-card-img
-                src="https://picsum.photos/400/400/?image=20"
-                alt="Image"
-              ></b-card-img>
-            </md-ripple>
-          </b-col>
-          <b-col md="6">
-            <md-ripple>
-              <b-card-body>
-                <b-card-text>Title </b-card-text>
-                <b-card-text>Description </b-card-text>
-              </b-card-body>
-            </md-ripple>
-          </b-col>
-        </b-row>
-      </b-card>
+      <hr />
+      <TriviaCard style="display: flex; justify-content: space-around" ref="card" :trivia="data.trivias[0]"/>
+      <hr />
       <!-- TRIVIA CARD COMPONENT END HERE -->
     </div>
   </section>
@@ -55,12 +34,12 @@
 <script>
 //import cartoonData
 import cartoonData from "../data/featuredCartoon.json";
-// import TriviaCard from "../components/TriviaCard.vue";
+import TriviaCard from "../components/TriviaCard.vue";
 
 export default {
   name: "CartoonPage",
   components: {
-    // TriviaCard,
+    TriviaCard,
   },
   computed: {
     validKey: function () {
@@ -114,6 +93,21 @@ export default {
       } else url = require("@/assets/default.jpg"); // use a default image if url empty
       return url;
     },
+    switchTrivia(idx){
+      if(idx>=this.data.trivias.length){
+        return; //ignore invalid index
+      }
+      else if(idx===this.data.trivias.length-1){
+        //last index was the DON'T CLICK BUTTON
+        this.dontClick_hit();
+      }
+      else{
+        this.$refs.card.trivia=this.data.trivias[idx]; //programmatically update the object LOL
+      }
+    },
+    dontClick_hit(){
+
+    }
   },
 };
 </script>
