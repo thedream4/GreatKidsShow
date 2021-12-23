@@ -55,6 +55,7 @@ h1, h2, h3, h4, h5{
 /* END CODE FOR SCROLLING GALLERY */
 video {
   width: 70%;
+  border: 10px silver ridge;
 }
 
 @media screen and (max-width: 1000px) {
