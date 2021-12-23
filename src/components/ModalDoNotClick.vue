@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div v-if="shown" v-on:click="shown=false">
     <span>
       <h1>I TOLD YOU NOT TO CLICK</h1>
       <h3>*insert some funny gif here*</h3>
@@ -10,7 +10,11 @@
 <script>
 export default {
   name: "Modal",
-  //   on app mount, emit click event to trigger modal popup
+  data:function(){
+    return {
+      shown:false
+    }
+  }
 };
 </script>
 

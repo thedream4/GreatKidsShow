@@ -26,7 +26,7 @@
       <!-- TRIVIA CARD COMPONENT END HERE -->
 
       <!-- how to toggle visibility when user click the "DO NOT CLICK" button -->
-      <doNotClick style="visibility:hidden;"/>
+      <doNotClick ref="dont_click_modal"/>
     </div>
   </section>
   <section v-else>
@@ -115,8 +115,10 @@ export default {
         var audio = new Audio(sound);
         audio.play();
       }
+    },
+    dontClick_hit(){
+      this.$refs["dont_click_modal"].shown=true;
     }
-    
   },
 };
 </script>
