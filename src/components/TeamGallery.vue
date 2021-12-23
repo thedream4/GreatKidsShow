@@ -9,7 +9,7 @@
           v-bind:key="member._id"
         >
           <md-ripple>
-            <div class="card" style="width: 18rem">
+            <div class="card" style="width: 20vw">
               <b class="card-title">{{ member.name.toUpperCase() }}</b>
               <img
                 :src="cover(member.photo)"

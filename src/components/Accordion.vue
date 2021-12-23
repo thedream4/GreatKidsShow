@@ -7,9 +7,11 @@
         >
       </b-card-header>
       <b-collapse id="accordion-1" accordion="my-accordion" role="tabpanel">
-        <b-card-body>
-          <b-card-text>{{ disclaimer }}</b-card-text>
-        </b-card-body>
+        <md-ripple>
+          <b-card-body>
+            <b-card-text>{{ disclaimer }}</b-card-text>
+          </b-card-body>
+        </md-ripple>
       </b-collapse>
     </b-card>
 
@@ -20,12 +22,14 @@
         >
       </b-card-header>
       <b-collapse id="accordion-2" accordion="my-accordion" role="tabpanel">
-        <b-card-body>
-          <b-card-text>{{ Programme }}</b-card-text>
-          <b-card-text>{{ moduleName }}</b-card-text>
-          <b-card-text>{{ moduleCode }}</b-card-text>
-          <b-card-text>{{ moduleDetails }}</b-card-text>
-        </b-card-body>
+        <md-ripple>
+          <b-card-body>
+            <b-card-text>{{ Programme }}</b-card-text>
+            <b-card-text>{{ moduleName }}</b-card-text>
+            <b-card-text>{{ moduleCode }}</b-card-text>
+            <b-card-text>{{ moduleDetails }}</b-card-text>
+          </b-card-body>
+        </md-ripple>
       </b-collapse>
     </b-card>
 
@@ -36,10 +40,12 @@
         >
       </b-card-header>
       <b-collapse id="accordion-3" accordion="my-accordion" role="tabpanel">
-        <b-card-body>
-          <b-card-text>{{ courseworkIntroduction }}</b-card-text>
-          <b-card-text>{{ courseworkDetail }}</b-card-text>
-        </b-card-body>
+        <md-ripple>
+          <b-card-body>
+            <b-card-text>{{ courseworkIntroduction }}</b-card-text>
+            <b-card-text>{{ courseworkDetail }}</b-card-text>
+          </b-card-body>
+        </md-ripple>
       </b-collapse>
     </b-card>
   </div>

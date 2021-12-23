@@ -1,61 +1,46 @@
 <template>
   <section v-if="validKey">
-    <img :src="cover(data.background)" alt="background image" class="bg-img" data-aos="fade-down" data-aos-duration="1500"  />
+    <img  :src="cover(data.background)"  alt="background image"  class="bg-img"  data-aos="fade-down"  data-aos-duration="1500"  />
+    <!-- .col1 is the navbar at the left of desktop vp / bottom of phone vp -->
     <div class="col1" data-aos="slide-right" data-aos-duration="1500">
-      <p>
-        Nav (pseudocode)
-        <br />
-        for each item in the trivia array, loop to display the nav link
-        <br />
-        on click of the navlink, dynamically render the content of trivia card
-        <br />
-        bootstrap reusable tab component? jQuery show/hide divs?
-      </p>
+      <!-- for each trivia in in the json database that is imported,
+      loop through and create a button for each -->
+      <button v-for="(trivia,index) in data.trivias" v-bind:key="index" v-on:click="switchTrivia(index)">
+        <h3>{{ trivia.title }}</h3>
+        <img :src="cover(trivia.icon)" alt="icon" width="50px" />
+      </button>
     </div>
-
+    <!-- .col2 is the content area where the cartoon video and trivia card
+    is rendered based on what user click in .col1-->
     <div class="col2" data-aos="zoom-in" data-aos-duration="1500">
-      <div>
-        <div>
-          <h1>
-            <b>{{ data.title.toUpperCase() }}</b>
-          </h1>
-          <video controls :poster="cover(data.thumbnail)">
-            <source :src="video_url" :type="video_mime" />
-          </video>
-        </div>
-      </div>
-      <div>
-        <p>
-          <b> //TODO: find in bootstrap library for a card component </b>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus,
-          molestiae architecto! Quisquam explicabo quaerat, vitae quis vel velit
-          voluptate! Repellendus sint quibusdam aliquam debitis saepe
-          exercitationem, quia optio sit minus consequuntur. Obcaecati numquam
-          neque maiores nulla pariatur quo nisi expedita debitis sed, vero sit
-          eum. Quidem ratione ipsa eligendi illo inventore neque! Aperiam quasi
-          rem porro aliquid illo, autem modi tempore eius voluptate! At
-          voluptatem deleniti exercitationem sunt provident quos maiores.
-          Excepturi beatae laboriosam eveniet iure, enim harum aspernatur porro
-          laudantium laborum eius error quas? Libero beatae delectus aliquid
-          incidunt vero necessitatibus eius amet itaque magnam iste maiores,
-          voluptatibus culpa.
-        </p>
-      </div>
+      <h1>
+        <b>{{ data.title.toUpperCase() }}</b>
+      </h1>
+      <video controls :poster="cover(data.thumbnail)">
+        <source :src="video_url" :type="video_mime" />
+      </video>
+      <!-- TRIVIA CARD COMPONENT START HERE -->
+      <hr />
+      <TriviaCard style="display: flex; justify-content: space-around" ref="card" :trivia="data.trivias[0]"/>
+      <hr />
+      <!-- TRIVIA CARD COMPONENT END HERE -->
     </div>
   </section>
   <section v-else>
-    <div class="col2">
-      Url /{{ $route.params.key }} is not existant
-    </div>
+    <div class="col2">Url /{{ $route.params.key }} is not existant</div>
   </section>
 </template>
 
 <script>
 //import cartoonData
 import cartoonData from "../data/featuredCartoon.json";
+import TriviaCard from "../components/TriviaCard.vue";
 
 export default {
   name: "CartoonPage",
+  components: {
+    TriviaCard,
+  },
   computed: {
     validKey: function () {
       for (let i = 0; i < cartoonData.length; i++) {
@@ -78,23 +63,22 @@ export default {
     video_url: function () {
       let url = this.data.video;
       try {
-        if(url.length>0)
-          url = require("@/assets/" + url); // match the url and use that video
+        if (url.length > 0) url = require("@/assets/" + url); // match the url and use that video
       } catch (e) {
-        url=""; //return empty url in case it is inexistant
+        url = ""; //return empty url in case it is inexistant
       }
       return url;
     },
-    video_mime: function(){
-      const url=this.video_url;
-      let mime=""; //empty mime force browser to automatically infer
+    video_mime: function () {
+      const url = this.video_url;
+      let mime = ""; //empty mime force browser to automatically infer
       //for now just construct the mime from the file extension
-      if(url.length>0){
-        const dots=url.split(".");
-        mime=`video/${dots[dots.length-1]}`;
+      if (url.length > 0) {
+        const dots = url.split(".");
+        mime = `video/${dots[dots.length - 1]}`;
       }
       return mime;
-    }
+    },
   },
   methods: {
     // "methods" is another word for "functions" in vue
@@ -109,6 +93,21 @@ export default {
       } else url = require("@/assets/default.jpg"); // use a default image if url empty
       return url;
     },
+    switchTrivia(idx){
+      if(idx>=this.data.trivias.length){
+        return; //ignore invalid index
+      }
+      else if(idx===this.data.trivias.length-1){
+        //last index was the DON'T CLICK BUTTON
+        this.dontClick_hit();
+      }
+      else{
+        this.$refs.card.trivia=this.data.trivias[idx]; //programmatically update the object LOL
+      }
+    },
+    dontClick_hit(){
+
+    }
   },
 };
 </script>
@@ -120,7 +119,7 @@ export default {
   z-index: -1;
   object-fit: cover;
   height: 100vh;
-  width:100vw;
+  width: 100vw;
 }
 section {
   background-size: cover;
@@ -130,32 +129,57 @@ section {
   height: 100vh;
 }
 .col1 {
+  position: fixed;
+  height: 100vh;
   width: 20vw;
   background-color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 .col2 {
   width: 80vw;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 20vw; /* width of .col1 */
 }
-
+.card{
+margin:auto;
+width:70%;
+height: 30vh;
+}
+button {
+  border: none;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 1px 2px 3px gray;
+}
 @media screen and (max-width: 1000px) {
-  .col1,
-  .col2 {
-    margin: 0;
+  .card{
+    margin:0;
+    width:100%;
+    height:auto;
   }
 }
 @media screen and (max-width: 600px) {
   section {
     display: block;
   }
-  .col1,
-  .col2 {
+  video {
     width: 100vw;
   }
   .col1 {
-    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    height: 15vh;
     bottom: 0;
+    z-index: 500;
+    width: 100%;
+    /* background-color: white; */
   }
+  .col2 {
+    margin: 0;
+    width: 100vw;
+    padding-bottom: 15vh; /* height of .col1 */
+  }
+
 }
 </style>

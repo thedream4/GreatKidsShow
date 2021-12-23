@@ -8,11 +8,11 @@
           @click="route(cartoon.route)"
         >
           <md-ripple>
-            <div class="card" style="width: 18rem">
+            <div class="card">
               <img
                 :src="cover(cartoon.thumbnail)"
                 alt="food"
-                style="width: 100%; height: auto"
+                style="width: 100%; height: 200px"
               />
               <div class="card-body">
                 <div class="card-text">
@@ -61,5 +61,6 @@ export default {
 <style scoped>
 .card {
   height: 50vh;
+  width: 20vw;
 }
 </style>
