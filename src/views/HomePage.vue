@@ -8,7 +8,7 @@
     <img  v-else src="../assets/bg-mount.jpg" alt="background image" class="bg-img" data-aos="fade-down" data-aos-duration="1500" />
     <!-- each button @click will set the bg data (line 60) to a specific
     number which will determine which bg img (line 5-8) gets rendered -->
-    <div style="display:flex; justify-content:space-evenly; align-items:center;">
+    <div class="change-bg">
       <md-button @click="bg=0">Mountain</md-button>
       <md-button @click="bg=1">Beach</md-button>
       <md-button @click="bg=2">Skyline</md-button>
@@ -80,5 +80,16 @@ export default {
   object-fit: cover;
   height: 100vh;
   width: 100vw;
+}
+.change-bg {
+  padding-top:5vh; 
+  display:flex; 
+  justify-content:space-evenly; 
+  align-items:center;
+}
+@media screen and (max-width: 1000px) {
+  .change-bg {
+    padding-top:5vh; 
+  }
 }
 </style>
