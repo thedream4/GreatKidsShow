@@ -18,18 +18,24 @@
       Your browser does not support the video tag.
     </video>
     <!-- end introduction video  -->
+
+    <!-- horizontal scrolling gallery -->
     <h2 data-aos="fade-up" data-aos-duration="1500"><i>☆☆☆ FEATURED ☆☆☆</i></h2>
     <VideoGallery
       :cartoons="featuredCartoon"
       data-aos="slide-left"
       data-aos-duration="1500"
     />
+    <!-- end horiozontal scrolling gallery -->
+
+    <!-- another horizontal scrolling gallery -->
     <h2 data-aos="fade-up" data-aos-duration="1700"><i>☆☆☆ TRENDING ☆☆☆</i></h2>
     <VideoGallery
       :cartoons="trendingCartoon"
-      data-aos="slide-right"
+      data-aos="slide-left"
       data-aos-duration="1500"
     />
+    <!-- end horizontal scrolling gallery -->
     <br /><br /><br />
   </div>
 </template>
@@ -70,5 +76,16 @@ export default {
   object-fit: cover;
   height: 100vh;
   width: 100vw;
+}
+.change-bg {
+  padding-top:5vh; 
+  display:flex; 
+  justify-content:space-evenly; 
+  align-items:center;
+}
+@media screen and (max-width: 1000px) {
+  .change-bg {
+    padding-top:5vh; 
+  }
 }
 </style>

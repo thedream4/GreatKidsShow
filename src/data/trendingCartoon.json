@@ -1,37 +1,62 @@
 [
     {
-        "id": 1,
-        "title": "fruits",
-        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi, eius",
-        "thumbnail": "",
-        "route": "fruits"
+        "title": "Dummy 1",
+        "description": "mouse smoking next to dynamit Image by Merio from Pixabay",
+        "thumbnail": "dummy1.jpg",
+        "route": ""
     },
     {
-        "id": 2,
-        "title": "vegetables",
-        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi, eius",
-        "thumbnail": "",
-        "route": "vegetables"
+        "title": "Dummy 2",
+        "description": "focus photo of super mario, luigi, and yoshi figurines pexels-pixabay-163036",
+        "thumbnail": "dummy2.jpg",
+        "route": ""
     },
     {
-        "id": 3,
-        "title": "sushi",
-        "description": "Let's learn about all the different types of sushi",
-        "thumbnail": "Thumbnail-Sushi.jpg",
-        "route": "sushi"
+        "title": "Dummy 3",
+        "description": "girl in yellow and blue dress holding white balloon Photo by Stone Hood on Unsplash",
+        "thumbnail": "dummy3.jpg",
+        "route": ""
     },
     {
-        "id": 4,
-        "title": "animals",
-        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi, eius",
-        "thumbnail": "",
-        "route": "animals"
+        "title": "Dummy 4",
+        "description": "man taking photo of man standing beside him pexels-pixabay-33487",
+        "thumbnail": "dummy4.jpg",
+        "route": ""
     },
     {
-        "id": 5,
-        "title": "hobbies",
-        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi, eius",
-        "thumbnail": "",
-        "route": "hobbies"
+        "title": "Dummy 5",
+        "description": "policeman and policewoman plastic toy  pexels-pixabay-33598",
+        "thumbnail": "dummy5.jpg",
+        "route": ""
+    },
+    {
+        "title": "Dummy 6",
+        "description": "two minion character figure on red table Photo by Justin Lim on Unsplash",
+        "thumbnail": "dummy6.jpg",
+        "route": ""
+    },
+    {
+        "title": "Dummy 7",
+        "description": "white egg with face illustration Photo by Shubham Dhage on Unsplash",
+        "thumbnail": "dummy7.jpg",
+        "route": ""
+    },
+    {
+        "title": "Dummy 8",
+        "description": "blue and white cartoon character Photo by Monica Garniga on Unsplash",
+        "thumbnail": "dummy8.jpg",
+        "route": ""
+    },
+    {
+        "title": "Dummy 9",
+        "description": "super-woman-gb79ab7b2c_640 Image by Janos Perian from Pixabay",
+        "thumbnail": "dummy9.jpg",
+        "route": ""
+    },
+    {
+        "title": "Dummy 10",
+        "description": "vegetables cartoon Image by Clker-Free-Vector-Images from Pixabay",
+        "thumbnail": "dummy10.png",
+        "route": ""
     }
 ]

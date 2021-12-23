@@ -9,12 +9,12 @@
           v-bind:key="member._id"
         >
           <md-ripple>
-            <div class="card" style="width: 18rem">
+        <div class="card">
               <b class="card-title">{{ member.name.toUpperCase() }}</b>
               <img
                 :src="cover(member.photo)"
                 alt="member"
-                style="height: 250px"
+                style="width: 100%; min-height: 120px"
               />
               <div class="card-body">
                 <b class="card-text">{{ member.expertise }}</b>
@@ -71,5 +71,15 @@ export default {
 <style scoped>
 #icon {
   width: 50px;
+}
+.card {
+  height: 50vh;
+  width: 20vw;
+}
+@media screen and (max-width: 1000px) {
+  .card {
+    height: 44vh;
+    width: 45vw;
+  }
 }
 </style>

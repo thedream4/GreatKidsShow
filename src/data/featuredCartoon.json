@@ -2,7 +2,7 @@
     {
         "id": 1,
         "title": "fruits",
-        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi, eius",
+        "description": "How mamy types of fruits do you know? What do you know about them?",
         "background": "bg-fruit.jpg",
         "video": "vidCartoon-Fruits.mp4",
         "thumbnail": "thumbnail-fruit.jpg",
@@ -26,7 +26,7 @@
             {
                 "title": "Pear",
                 "icon": "icon-pear.png",
-                "trivia": "Pears are similar to apples in that they have small seeds and grow on trees. They’re a good source of vitamin C and fiber. They’re available year-round, although they taste best from fall to winter. Pears can be made into pear butter or canned."
+                "trivia": "Pears are similar to apples in that they have small seeds and grow on trees. They are a good source of vitamin C and fiber. They are available year-round, although they taste best from fall to winter. Pears can be made into pear butter or canned."
             },
             {
                 "title": "Mango",
@@ -53,10 +53,10 @@
     {
         "id": 2,
         "title": "vegetables",
-        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi, eius",
-        "background": "",
-        "video": "",
-        "thumbnail": "",
+        "description": "Lets watch the advanture that flut have with the vegetables!",
+        "background": "bg-garden.png",
+        "video": "vegetable-with-flut-and-flora.mp4",
+        "thumbnail": "Thumbnail-Vegetables.jpg",
         "route": "vegetables",
         "trivias": [
             {
@@ -104,7 +104,7 @@
     {
         "id": 3,
         "title": "sushi",
-        "description": "Let's learn about all the different types of sushi",
+        "description": "Let's learn about all the different types of sushi. Yummy!",
         "background": "bg-mount.jpg",
         "video": "vidcartoon-sushi.mp4",
         "thumbnail": "Thumbnail-Sushi.jpg",
@@ -155,7 +155,7 @@
     {
         "id": 4,
         "title": "animals",
-        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi, eius",
+        "description": "We all love animals! They are just so adorable. Mother nature sure has its wonders~",
         "background": "bg-animal.jpg",
         "video": "vidcartoon-animal.mp4",
         "thumbnail": "Safari_Animals.png",
@@ -176,32 +176,26 @@
                 "icon": "icon-giraffe.png",
                 "trivia": "Giraffes are the tallest living land animals. They are herbivoures. They live in open woodland or grassland where they eat the leaves from trees that other animals can't reach."
             },
-            
             {
                 "title": "Stag",
                 "icon": "icon-stag.png",
                 "trivia": "Stags have big antlers. They are herbivours and eat leaves. A male deer is called stag or buck, a female deer is called doe, and a young deer is called fawn."
             },
-            
             {
                 "title": "Zebra",
                 "icon": "icon-zebra.png",
                 "trivia": "Closely related to horses, zebras have thick bodies, thin legs, a tufted tail, and a long head and neck sporting a short mane. Their black-and-white stripes help them in confusing the predators and helping zebras to recognise each other."
             },
-            
             {
                 "title": "Hippopotamus",
                 "icon": "icon-hippopotamus.png",
                 "trivia": "Hippos are large semi-aquatic mammals, with a large barrel-shaped body, short legs, a short tail and an enormous head! They have greyish to muddy-brown skin, which fades to a pale pink colour underneath. They are considered the second largest land animal on Earth"
             },
-            
             {
                 "title": "Leopard",
                 "icon": "icon-leopard.png",
                 "trivia": "Leopards are considered to be the strongest member of the big cats. Leopards spend a lot of their time in trees. Their spotted coat camouflages them, making them blend in with the leaves of the tree"
             },
-            
-            
             {
                 "title": "DO NOT CLICK",
                 "icon": "do-not-click.png",
@@ -212,8 +206,8 @@
     {
         "id": 5,
         "title": "hobbies",
-        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi, eius",
         "background": "bg-hobbies.png",
+        "description": "Healthy hobbies leads to a healthy lifestyle. Find out more",
         "video": "",
         "thumbnail": "",
         "route": "hobbies",

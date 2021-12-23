@@ -8,15 +8,15 @@
           @click="route(cartoon.route)"
         >
           <md-ripple>
-            <div class="card" style="width: 18rem">
+            <div class="card" style="height: 40vh">
               <img
                 :src="cover(cartoon.thumbnail)"
                 alt="food"
-                style="width: 100%; height: auto"
+                style="width: 100%; min-height: 120px"
               />
               <div class="card-body">
                 <div class="card-text">
-                  <h3>☆ {{ cartoon.title }} ☆</h3>
+                  <h3> {{ cartoon.title }} </h3>
                   {{ cartoon.description }}
                 </div>
               </div>
@@ -60,6 +60,13 @@ export default {
 
 <style scoped>
 .card {
-  height: 50vh;
+  height: 40vh;
+  width: 20vw;
+}
+@media screen and (max-width: 1000px) {
+  .card {
+    height: 35vh;
+    width: 45vw;
+  }
 }
 </style>
