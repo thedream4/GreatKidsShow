@@ -4,6 +4,8 @@
     <img v-else-if="bg === 2" src="../assets/bg-home-skyline.png" alt="background image" class="bg-img" data-aos="fade-down" data-aos-duration="1500" />
     <img  v-else-if="bg === 3" src="../assets/bg-home-garden.png" alt="background image" class="bg-img" data-aos="fade-down" data-aos-duration="1500" />
     <img  v-else src="../assets/bg-home-mount.png" alt="background image" class="bg-img" data-aos="fade-down" data-aos-duration="1500" />
+    <!-- on button click (line 10-13) the bg data (which is default at 0 on line 60) will be be changed.
+     if-else statement (line 3-6) determine which img gets rendered as background depending on button click -->
     <div class="change-bg" >
       <md-button @click="bg=0">Mountain</md-button>
       <md-button @click="bg=1">Beach</md-button>
@@ -14,7 +16,7 @@
 
     <!-- Introduction video -->
     <video controls data-aos="slide-right" data-aos-duration="1500" poster="../assets/thumbnail-team.png" >
-      <source src="" type="video/mp4" />
+      <source src="../assets/vid-group.mp4" type="video/mp4" />
       Your browser does not support the video tag.
     </video>
     <!-- end introduction video  -->
@@ -37,12 +39,14 @@
     />
     <!-- end horizontal scrolling gallery -->
     <br /><br /><br />
+    <Modal />
   </div>
 </template>
 
 <script>
 import { ref } from "@vue/composition-api";
 import VideoGallery from "../components/VideoGallery.vue";
+import Modal from "../components/ModalWelcome.vue"
 import featuredCartoonData from "@/data/featuredCartoon.json";
 import trendingCartoonData from "@/data/trendingCartoon.json";
 // if your crush knows binary
@@ -58,7 +62,9 @@ export default {
   },
   components: {
     VideoGallery,
+    Modal,
   },
+
   setup() {
     const featuredCartoon = ref(featuredCartoonData);
     const trendingCartoon = ref(trendingCartoonData);

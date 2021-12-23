@@ -208,8 +208,8 @@
         "title": "hobbies",
         "background": "bg-hobbies.png",
         "description": "Healthy hobbies leads to a healthy lifestyle. Find out more",
-        "video": "",
-        "thumbnail": "",
+        "video": "vidcartoon-hobby.mp4",
+        "thumbnail": "thumbnail-hobby.jpg",
         "route": "hobbies",
         "trivias": [
             

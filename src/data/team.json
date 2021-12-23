@@ -90,17 +90,9 @@
         "Age": 21,
         "expertise": "Multimedia & Content Writer",
         "socials": {
-            "IG": {
-                "icon": "icon-IG.png",
-                "link": "https://www.instagram.com/shontzu/"
-            },
-            "LN": {
-                "icon": "icon-LI.png",
-                "link": "https://www.linkedin.com/in/shontzu/"
-            },
             "GH": {
                 "icon": "icon-GH.png",
-                "link": "https://github.com/yuuchin"
+                "link": "https://github.com/edmundleongst"
             }
         }
     }
