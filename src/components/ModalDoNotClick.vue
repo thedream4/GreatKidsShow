@@ -1,7 +1,6 @@
 <template>
-  <div v-if="shown" v-on:click="shown = false">
+  <div v-if="shown" v-on:click="shown=false">
     <span>
-      <h1>I TOLD YOU NOT TO CLICK</h1>
       <img v-if="gif == 1" src="../assets/giphy1.gif"/>
       <img v-else-if="gif == 2" src="../assets/giphy2.gif" />
       <img v-else-if="gif == 3" src="../assets/giphy3.gif" />
@@ -25,7 +24,7 @@ export default {
   },
   computed: {
     gif: function() { 
-      return Math.floor(Math.random() * 10 + 1);
+        return Math.floor(Math.random() * 10 + 1);
     },
   },
 };
