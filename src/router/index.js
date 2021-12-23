@@ -41,6 +41,7 @@ const routes = [
 // call the router
 const router = new VueRouter({
   routes,
+  // history mode allows user to use the "back" button
   mode: 'history',
 })
 

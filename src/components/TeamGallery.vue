@@ -2,29 +2,20 @@
   <div>
     <div class="viewport">
       <div class="container">
-        <div
-          data-aos="flip-left"
-          data-aos-duration="1500"
-          v-for="member in members"
-          v-bind:key="member._id"
-        >
+        <!-- AOS (Animation on Scroll) is a library imported in main.js -->
+        <div  data-aos="flip-left"  data-aos-duration="1500" v-for="member in members" v-bind:key="member._id" >
           <md-ripple>
-            <div class="card" style="width: 18rem">
+            <!-- the card is from bootstrap library with a touch of vue -->
+            <div class="card">
               <b class="card-title">{{ member.name.toUpperCase() }}</b>
-              <img
-                :src="cover(member.photo)"
-                alt="member"
-                style="height: 250px"
-              />
+              <img  :src="cover(member.photo)"  alt="member"  style="width: 100%; min-height: 120px" />
               <div class="card-body">
                 <b class="card-text">{{ member.expertise }}</b>
-                <p>{{member.ID}}</p>
+                <p>{{ member.ID }}</p>
               </div>
-              <div style="display: flex; flex-direction: row; justify-content:space-evenly;">
+              <div style="display:flex; flex-direction:row; justify-content:space-evenly;">
                 <div v-for="social in member.socials" v-bind:key="social._id">
-                  <a :href="social.link" target="blank">
-                    <img :src="cover(social.icon)" alt="icon" id="icon" />
-                  </a>
+                  <a :href="social.link" target="blank" ><img :src="cover(social.icon)" alt="icon" id="icon"/></a>
                 </div>
               </div>
             </div>
@@ -71,5 +62,15 @@ export default {
 <style scoped>
 #icon {
   width: 50px;
+}
+.card {
+  height: 50vh;
+  width: 20vw;
+}
+@media screen and (max-width: 1000px) {
+  .card {
+    height: 44vh;
+    width: 45vw;
+  }
 }
 </style>
