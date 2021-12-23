@@ -16,7 +16,7 @@
 <script>
 export default {
   name: "Modal",
-//   on app mount, emit click event to trigger modal popup
+//   on app mount, emit click event towards modal button to trigger modal popup
   mounted() {
     const elem = this.$refs.myBtn;
     elem.click();

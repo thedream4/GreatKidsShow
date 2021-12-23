@@ -11,11 +11,6 @@ export default {
   components: {
     "nav-bar": NavBar,
   },
-  // uncomment line 16-18 before submission
-  // alert will be called everytime the app refreshes
-  // created: () => {
-  //   alert("Let's Explore!");
-  // },
 };
 </script>
 
@@ -58,6 +53,7 @@ video {
   width: 70%;
 }
 
+/* tablet viewport */
 @media screen and (max-width: 1000px) {
   video {
   width: 100%;

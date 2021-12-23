@@ -1,8 +1,6 @@
 <template>
   <div v-if="shown" v-on:click="shown=false">
-    <span>
-      <img :src="gif_url"/>
-    </span>
+    <span><img :src="gif_url"/></span>
   </div>
 </template>
 
@@ -21,6 +19,9 @@ export default {
         }
         else{
           try{
+            // use random number generator to determine which gif gets shown in line 3
+            // ../assets/giphy(n).gif   where (n) is random number from 1 to 10
+            // ../assets/giphy1.gif     ../assets/giphy2.gif    ../assets/giphy3.gif
             return require(`../assets/giphy${Math.floor(Math.random() * 10 + 1)}.gif`);
           }
           catch(e){

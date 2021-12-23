@@ -1,29 +1,15 @@
 <template>
   <div id="nav">
-    <md-ripple
-      ><router-link to="/"><p>Home</p></router-link></md-ripple
-    >
-    <md-ripple
-      ><router-link to="/about"><p>About</p></router-link></md-ripple
-    >
-    <md-ripple
-      ><router-link to="/games"><p>Games</p></router-link></md-ripple
-    >
-    <md-ripple
-      ><router-link to="/fruits"><p>Fruits</p></router-link></md-ripple
-    >
-    <md-ripple
-      ><router-link to="/vegetables"><p>Vegetables</p></router-link></md-ripple
-    >
-    <md-ripple
-      ><router-link to="/sushi"><p>Sushi</p></router-link></md-ripple
-    >
-    <md-ripple
-      ><router-link to="/animals"><p>Animals</p></router-link></md-ripple
-    >
-    <md-ripple
-      ><router-link to="/hobbies"><p>Hobbies</p></router-link></md-ripple
-    >
+    <!-- the md-ripple tags are from the vue-material component library imported in main.js 
+    it gives (like the name suggest) a "ripple" effect on click -->
+    <md-ripple><router-link to="/"><p>Home</p></router-link></md-ripple>
+    <md-ripple><router-link to="/about"><p>About</p></router-link></md-ripple>
+    <md-ripple><router-link to="/games"><p>Games</p></router-link></md-ripple>
+    <md-ripple><router-link to="/fruits"><p>Fruits</p></router-link></md-ripple>
+    <md-ripple><router-link to="/vegetables"><p>Vegetables</p></router-link></md-ripple>
+    <md-ripple><router-link to="/sushi"><p>Sushi</p></router-link></md-ripple>
+    <md-ripple><router-link to="/animals"><p>Animals</p></router-link></md-ripple>
+    <md-ripple><router-link to="/hobbies"><p>Hobbies</p></router-link></md-ripple>
   </div>
 </template>
 
@@ -57,7 +43,6 @@ p {
     top: 0;
     position: sticky;
     margin-bottom: 20px;
-    /* background-color: rgba(255, 255, 255, 0.5) */
   }
   p {
     height: 5vh;

@@ -2,29 +2,21 @@
   <div>
     <div class="viewport">
       <div class="container">
-        <div
-          v-for="cartoon in cartoons"
-          v-bind:key="cartoon._id"
-          @click="route(cartoon.route)"
-        >
-          <md-ripple>
-            <div class="card" style="height: 40vh">
-              <img
-                :src="cover(cartoon.thumbnail)"
-                alt="food"
-                style="width: 100%; min-height: 120px"
-              />
+        <div v-for="cartoon in cartoons"  v-bind:key="cartoon._id"  @click="route(cartoon.route)">
+          <md-ripple> <!-- need to wrap md-ripple OUTSIDE the component that you want to ripple -->
+            <div class="card" style="height: 40vh"> <!-- another bootstrap card -->
+              <img :src="cover(cartoon.thumbnail)" alt="food" style="width: 100%; min-height: 120px"/>
               <div class="card-body">
                 <div class="card-text">
                   <h3> {{ cartoon.title }} </h3>
                   {{ cartoon.description }}
                 </div>
               </div>
-            </div>
+            </div> <!-- end of bootstrap card -->
           </md-ripple>
-        </div>
-      </div>
-    </div>
+        </div> <!-- end of v-for loop -->
+      </div> <!-- end of container -->
+    </div> <!-- end of viewport -->
   </div>
 </template>
 
