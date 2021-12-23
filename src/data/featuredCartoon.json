@@ -3,7 +3,7 @@
         "id": 1,
         "title": "fruits",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi, eius",
-        "background": "bg-fruit",
+        "background": "bg-fruit.jpg",
         "video": "vidCartoon-Fruits.mp4",
         "thumbnail": "thumbnail-fruit.jpg",
         "route": "fruits",
