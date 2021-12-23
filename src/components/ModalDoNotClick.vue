@@ -10,7 +10,7 @@
       <img v-else-if="gif == 6" src="../assets/giphy6.gif" />
       <img v-else-if="gif == 7" src="../assets/giphy7.gif" />
       <img v-else-if="gif == 8" src="../assets/giphy8.gif" />
-      <img v-else src="../assets/icon-temaki.png" />
+      <img v-else src="../assets/giphy9.gif" />
     </span>
   </div>
 </template>
