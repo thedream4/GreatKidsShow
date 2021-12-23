@@ -3,7 +3,7 @@
         "id": 1,
         "title": "fruits",
         "description": "How mamy types of fruits do you know? What do you know about them?",
-        "background": "bg-fruit",
+        "background": "bg-fruit.jpg",
         "video": "vidCartoon-Fruits.mp4",
         "thumbnail": "thumbnail-fruit.jpg",
         "route": "fruits",
@@ -106,7 +106,7 @@
         "title": "sushi",
         "description": "Let's learn about all the different types of sushi. Yummy!",
         "background": "bg-mount.jpg",
-        "video": "sushi.avi",
+        "video": "vidcartoon-sushi.mp4",
         "thumbnail": "Thumbnail-Sushi.jpg",
         "route": "sushi",
         "trivias": [
