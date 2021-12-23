@@ -1,9 +1,9 @@
 <template>
   <div>
-    <img v-if="bg === 1" src="../assets/bg-garden.png" alt="background image" class="bg-img" data-aos="fade-down" data-aos-duration="1500" />
-    <img v-else-if="bg === 2" src="../assets/bg-mount.jpg" alt="background image" class="bg-img" data-aos="fade-down" data-aos-duration="1500" />
-    <img  v-else-if="bg === 3" src="../assets/bg-garden.png" alt="background image" class="bg-img" data-aos="fade-down" data-aos-duration="1500" />
-    <img  v-else src="../assets/bg-mount.jpg" alt="background image" class="bg-img" data-aos="fade-down" data-aos-duration="1500" />
+    <img v-if="bg === 1" src="../assets/bg-home-beach.png" alt="background image" class="bg-img" data-aos="fade-down" data-aos-duration="1500" />
+    <img v-else-if="bg === 2" src="../assets/bg-home-skyline.png" alt="background image" class="bg-img" data-aos="fade-down" data-aos-duration="1500" />
+    <img  v-else-if="bg === 3" src="../assets/bg-home-garden.png" alt="background image" class="bg-img" data-aos="fade-down" data-aos-duration="1500" />
+    <img  v-else src="../assets/bg-home-mount.png" alt="background image" class="bg-img" data-aos="fade-down" data-aos-duration="1500" />
     <div style="display:flex; justify-content:space-evenly; align-items:center;">
       <md-button @click="bg=0">Mountain</md-button>
       <md-button @click="bg=1">Beach</md-button>
