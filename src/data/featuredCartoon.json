@@ -206,46 +206,26 @@
     {
         "id": 5,
         "title": "hobbies",
+        "background": "bg-hobbies.png",
         "description": "Healthy hobbies leads to a healthy lifestyle. Find out more",
-        "background": "",
         "video": "",
         "thumbnail": "",
         "route": "hobbies",
         "trivias": [
             {
-                "title": "",
-                "icon": "",
-                "trivia": ""
+                "title": "Cooking",
+                "icon": "icon-cooking.png",
+                "trivia": "Cooking or cookery is the art, technology and craft of preparing food for consumption with or without the use of heat. Cooking techniques and ingredients vary widely across the world, from grilling food over an open fire to using electric stoves, to baking in various types of ovens, reflecting unique environmental, economic, and cultural traditions and trends."
             },
             {
-                "title": "",
-                "icon": "",
-                "trivia": ""
+                "title": "Drawing",
+                "icon": "icon-drawing.png",
+                "trivia": "Drawing is a way of making a picture. Drawings are created by making lines on a surface. Long lines make up the shapes and small lines make the textures. Drawings can be images of real life or abstract images showing ideas cannot be seen in the real world."
             },
             {
-                "title": "",
-                "icon": "",
-                "trivia": ""
-            },
-            {
-                "title": "",
-                "icon": "",
-                "trivia": ""
-            },
-            {
-                "title": "",
-                "icon": "",
-                "trivia": ""
-            },
-            {
-                "title": "",
-                "icon": "",
-                "trivia": ""
-            },
-            {
-                "title": "",
-                "icon": "",
-                "trivia": ""
+                "title": "Jogging",
+                "icon": "icon-jogging.png",
+                "trivia": "Jogging is running at a slow speed. Many people go for a jog in order to keep fit and healthy. People go jogging for exercise, not for competitions. Jogging is a very cheap way of keeping fit, because all that is needed is a good pair of running shoes."
             },
             {
                 "title": "DO NOT CLICK",
