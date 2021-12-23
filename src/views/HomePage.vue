@@ -13,7 +13,7 @@
     <h1 data-aos="fade-up" data-aos-duration="900">HOME</h1>
 
     <!-- Introduction video -->
-    <video controls data-aos="slide-right" data-aos-duration="1500">
+    <video controls data-aos="slide-right" data-aos-duration="1500" poster="../assets/thumbnail-team.png" >
       <source src="" type="video/mp4" />
       Your browser does not support the video tag.
     </video>
