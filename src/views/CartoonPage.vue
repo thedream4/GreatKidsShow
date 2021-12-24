@@ -6,8 +6,7 @@
       <!-- for each trivia in in the json database that is imported,
       loop through and create a button for each -->
       <button v-for="(trivia,index) in data.trivias" v-bind:key="index" v-on:click="switchTrivia(index), emitSound('http://soundbible.com/mp3/Air Plane Ding-SoundBible.com-496729130.mp3')">
-        <h3>{{ trivia.title }}</h3>
-        <img :src="cover(trivia.icon)" alt="icon" width="50px" />
+        <img :src="cover(trivia.icon)" alt="icon"/>
       </button>
     </div>
     <!-- .col2 is the content area where the cartoon video and trivia card
@@ -161,12 +160,19 @@ button {
   border: none;
   background-color: rgba(255, 255, 255, 0.2);
   box-shadow: 1px 2px 3px gray;
+  height:10%;
+}
+button>img{
+  height:100%;
 }
 @media screen and (max-width: 1000px) {
   .card{
     margin:0;
     width:100%;
     height:auto;
+  }
+  h3{
+    display:block;
   }
 }
 @media screen and (max-width: 600px) {
@@ -178,9 +184,9 @@ button {
   }
   .col1 {
     display: flex;
-    flex-wrap: wrap;
-    margin: 0;
-    height: 15vh;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    height: 10vh;
     bottom: 0;
     z-index: 500;
     width: 100%;
@@ -190,6 +196,10 @@ button {
     margin: 0;
     width: 100vw;
     padding-bottom: 15vh; /* height of .col1 */
+  }
+  button{
+    width:10vw;
+    height:5vh;
   }
 
 }
