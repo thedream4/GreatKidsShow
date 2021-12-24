@@ -25,7 +25,7 @@
       <!-- TRIVIA CARD COMPONENT END HERE -->
 
       <!-- how to toggle visibility when user click the "DO NOT CLICK" button -->
-      <doNotClick ref="dont_click_modal"/>
+      <doNotClick ref="dont_click_modal" :key="$route.params.key"/>
     </div>
   </section>
   <section v-else>
@@ -116,6 +116,7 @@ export default {
       }
     },
     dontClick_hit(){
+      this.$refs["dont_click_modal"].shown=false;
       this.$refs["dont_click_modal"].shown=true;
     }
   },
