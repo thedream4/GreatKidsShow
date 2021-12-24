@@ -1,18 +1,10 @@
 # GREAT KIDS SHOW
 
-Your machine will need node.js to run this application
+1. Your machine will need node.js to run this application. install node.js [here](https://nodejs.org/en/)
+2. Netbeans IDE will need cygwin to enable the terminal. install cygwin [here](https://cygwin.com/install.html)
+3. Open project in netbeans and  bring out the terminal (Window > IDE Tools > terminal) and run the command in **setup project**
 
-1. install node.js [here](https://nodejs.org/en/)
-2. Navigate to bin folder once installed
-3. copy directory of bin folder and paste into environment variable
-
-Netbeans IDE will need cygwin to run node.js application
-
-1. install cygwin [here](https://cygwin.com/install.html)
-2. restart Netbeans IDE
-3. Open netbeans terminal (Window > IDE Tools > terminal) and setup project
-4. You may need to navigate to the project folder first (use shell commands)
-
+<br><br>
 ## Setup project
 
 ```
@@ -27,23 +19,16 @@ npm install
 npm run serve
 ```
 
-> preview the app
+> preview the app locally (localhost:8080)
 
-### Compiles and minifies for production
-
-```
-npm run build
-```
-
-> minifies the app for production
-
-### Collaborating in Branches
+<br><br>
+## Collaborating in Branches
 
 1. Main - Most stable version of the app, only commit new changes through staging branch
 2. Staging - Pre-production branch, to test code base on production environment. Feature merges goes to staging.
-3. `feature-name` - Branch namespace for any feature that you are working on (e.g. `scroll-animation`, `button-sound-effects`, `embedding-game` etc.)
+3. `feature-name` - Branch namespace for any feature that you are working on (e.g. `feature-AOS`, `feature-accordion`, `feature-game-install` etc.)
 
-### FOR FUN!!! list of animations:
+### List of animations
 
 usage: just add the animation to your html tags
 <br />`<p data-aos="slide-up" data-aos-duration="1500">Hello!</p>`
