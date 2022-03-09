@@ -17,6 +17,10 @@
             "GH": {
                 "icon": "icon-GH.png",
                 "link": "https://github.com/yuuchin"
+            },
+            "PF": {
+                "icon": "icon-PF.png",
+                "link": "https://yuuchin.github.io/ycPortfolio/"
             }
         }
     },
@@ -38,6 +42,10 @@
             "GH": {
                 "icon": "icon-GH.png",
                 "link": "https://github.com/ngeojiajun"
+            },
+            "PF": {
+                "icon": "icon-PF.png",
+                "link": "https://ngeojiajun.github.io/"
             }
         }
     },
@@ -59,6 +67,10 @@
             "GH": {
                 "icon": "icon-GH.png",
                 "link": "https://github.com/HikariiChan"
+            },
+            "PF": {
+                "icon": "icon-PF.png",
+                "link": "https://hikariichan.github.io/Personal-Website/"
             }
         }
     },
@@ -80,6 +92,10 @@
             "GH": {
                 "icon": "icon-GH.png",
                 "link": "https://github.com/MirageWing"
+            },
+            "PF": {
+                "icon": "icon-PF.png",
+                "link": "https://miragewing.github.io/personal_website.io/"
             }
         }
     },
