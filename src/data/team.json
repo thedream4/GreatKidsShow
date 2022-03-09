@@ -109,6 +109,10 @@
             "GH": {
                 "icon": "icon-GH.png",
                 "link": "https://github.com/edmundleongst"
+            },
+            "PF": {
+                "icon": "icon-PF.png",
+                "link": "https://edmundleongst.github.io/"
             }
         }
     }
